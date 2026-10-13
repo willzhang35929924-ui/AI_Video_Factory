@@ -1,0 +1,2750 @@
+{
+  "status": "PASS_LOCAL",
+  "commit": "ca264cf2d8287c40ac1926abba9c63c15b75b886",
+  "branch": "clean-development-20261012",
+  "included": [
+    {
+      "path": ".env.example",
+      "bytes": 310,
+      "sha256": "46b2b8562cede76cfb364389c93f17bf77f85c567271dfa99aa43b890ff32ba2"
+    },
+    {
+      "path": ".gitignore",
+      "bytes": 502,
+      "sha256": "6da341b6e10e11d8b2235b0b2365d626bf6bc8cb5297e11820e4a620d7a8175c"
+    },
+    {
+      "path": "backend/.env.example",
+      "bytes": 810,
+      "sha256": "52a39d50a42dc0688714dfba74ecee2cd8a286228567f8783f24dc9eae5019b2"
+    },
+    {
+      "path": "backend/alembic.ini",
+      "bytes": 96,
+      "sha256": "4be35c86b24192bde1327811488c4fcbc1f446b8c1e688fbbcba8f27640a252b"
+    },
+    {
+      "path": "backend/app/__init__.py",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "backend/app/action_schemas.py",
+      "bytes": 4110,
+      "sha256": "4cc9509dadd3b1754d98b63f7e14f6634108ab2850b7fc7ef98eb26d5047ce65"
+    },
+    {
+      "path": "backend/app/adapters.py",
+      "bytes": 7159,
+      "sha256": "5e9617245ebeaf21a2b7d8acd9999cbedf6019ceba16abca0aa1e192825afe8d"
+    },
+    {
+      "path": "backend/app/catalog.py",
+      "bytes": 5703,
+      "sha256": "a7891de7fee1feb0a28d73ee4d4b8a749da052eadecede356ed083cb31e01509"
+    },
+    {
+      "path": "backend/app/config.py",
+      "bytes": 2872,
+      "sha256": "87b8c06d6f753b92d405b946a42fafaf74d135a6cb57b3e191ace2792a2c6e93"
+    },
+    {
+      "path": "backend/app/domain.py",
+      "bytes": 4098,
+      "sha256": "16970cdabbbb3f46c3b2871239e14f138239b2fa5f2cc3051fa975606828a090"
+    },
+    {
+      "path": "backend/app/integrations/__init__.py",
+      "bytes": 59,
+      "sha256": "6f817180177d67ab17ffdabad2ecff44a66ce431d9e5a96996797f27045f375c"
+    },
+    {
+      "path": "backend/app/integrations/asset_registry.py",
+      "bytes": 110415,
+      "sha256": "ab929791a9f2f7683051a358ba634a330960a3d09c4fd41d83be37fd15a1778f"
+    },
+    {
+      "path": "backend/app/integrations/asset_routes.py",
+      "bytes": 3025,
+      "sha256": "af22a1e1b81f60b313143d0168825baf44912a8ca7cb7abe1d2f433a442b98cc"
+    },
+    {
+      "path": "backend/app/integrations/collection_identity.py",
+      "bytes": 5349,
+      "sha256": "0f5bc186061a31d333f25e7cf1f90a60390a6baedd2227d3791385006fe61827"
+    },
+    {
+      "path": "backend/app/integrations/collector_board.py",
+      "bytes": 9266,
+      "sha256": "f26223d820ebffdd585a38cd919d0b2454d1a3f87af7a54abfcefe175cd9e40e"
+    },
+    {
+      "path": "backend/app/integrations/collector_review.py",
+      "bytes": 12238,
+      "sha256": "bfdaa26dc8258416172fd111be8faa346ad0dea5d360c994dc2b0900a0c088cc"
+    },
+    {
+      "path": "backend/app/integrations/collector_service.py",
+      "bytes": 71315,
+      "sha256": "524f5ec0a093d329ab74dfef60e45474851012ab7c35649195e612445151fb4e"
+    },
+    {
+      "path": "backend/app/integrations/collector_triage.py",
+      "bytes": 22066,
+      "sha256": "278eebadbac25e77bd4a126cda285a92b2b8fab55dec848730e3f9f265d43233"
+    },
+    {
+      "path": "backend/app/integrations/comfy_asset_adapter.py",
+      "bytes": 6139,
+      "sha256": "e49331412e52f88c4666768befb09055d5924f566c82ded7d505cf7223822d1b"
+    },
+    {
+      "path": "backend/app/integrations/contracts.py",
+      "bytes": 4877,
+      "sha256": "6da59b7ae199dfdc84c3e124b01c2ffd7d7104f0ba3e3753a2948f1c074e38b7"
+    },
+    {
+      "path": "backend/app/integrations/excel_mapping.py",
+      "bytes": 7848,
+      "sha256": "8ee69926e6dba76742cf3974f993d029241647feab8e75b2e8b447e97b0e2672"
+    },
+    {
+      "path": "backend/app/integrations/external_budget.py",
+      "bytes": 2304,
+      "sha256": "07f565dbed3be2e38b31cf0012d8b867b2db55d049390afa798c869116970894"
+    },
+    {
+      "path": "backend/app/integrations/factory_shadowbot_chatgpt.py",
+      "bytes": 20631,
+      "sha256": "3c02dff1f75848c19788aa4f56b7cbd0b5dd620b0bd5d219af07e36c2f702f73"
+    },
+    {
+      "path": "backend/app/integrations/file_lock.py",
+      "bytes": 847,
+      "sha256": "26873871c78753132a0aa26964814eac708d299d778fd6b4e98d2d9a97d3e86d"
+    },
+    {
+      "path": "backend/app/integrations/input_routes.py",
+      "bytes": 5041,
+      "sha256": "eb152f56be75138701bf93ffcd2fb1f69b418d8a4f9afdc44f13e404ca49d4db"
+    },
+    {
+      "path": "backend/app/integrations/input_service.py",
+      "bytes": 18674,
+      "sha256": "d0953d2fb7ee662b99e7f4542f8368743435176feff4e789f12137e8c2293cc7"
+    },
+    {
+      "path": "backend/app/integrations/legacy/__init__.py",
+      "bytes": 60,
+      "sha256": "a7986298abcba71de66c28aa1d72ba00de40e236ab655385df8bd00fb7be587f"
+    },
+    {
+      "path": "backend/app/integrations/legacy/alpha_preview_worker.py",
+      "bytes": 3264,
+      "sha256": "63614a91afd8975655049a60ab1f7e1b3a98a9af9f7d78bd6f9baac00192ad51"
+    },
+    {
+      "path": "backend/app/integrations/legacy/browser_client.py",
+      "bytes": 2010,
+      "sha256": "7365c94e5fd163656b6be0a01e906a80db363e0da18110c4de6fe6f0c4d493b1"
+    },
+    {
+      "path": "backend/app/integrations/legacy/browser_prepare_worker.py",
+      "bytes": 6115,
+      "sha256": "1aaa96cf88be10514cc2baa9d06301d6b915e198dad0dab0a892d479fcfa120e"
+    },
+    {
+      "path": "backend/app/integrations/legacy/collector_adapter.py",
+      "bytes": 19612,
+      "sha256": "ba105a7490e5bad28a8f9a10c8ede747c4456947bb7879bd6da4c9a200be347b"
+    },
+    {
+      "path": "backend/app/integrations/legacy/collector_worker.py",
+      "bytes": 76974,
+      "sha256": "799dd52c5f107e40c7e92c9aaed8092ac3d13a8fe4712e37d2fa93787081b810"
+    },
+    {
+      "path": "backend/app/integrations/legacy/comfy_asset_worker.py",
+      "bytes": 60015,
+      "sha256": "47c9457d7085bcf04fe093efb97455311f2a9915a6d488a997644f6e0083ef2f"
+    },
+    {
+      "path": "backend/app/integrations/legacy/input_worker.py",
+      "bytes": 6248,
+      "sha256": "5ebc791369b3cce7b104cf2c1bf2868d8d6130876cbbec5b5a22409f96306064"
+    },
+    {
+      "path": "backend/app/integrations/legacy/manual_import_evidence_worker.py",
+      "bytes": 2534,
+      "sha256": "2513323290e771937097ad418e1f20e481b220bdbd1d1dcc8c73f403cbde00bb"
+    },
+    {
+      "path": "backend/app/integrations/legacy/matte_repair_worker.py",
+      "bytes": 18564,
+      "sha256": "38ad06e18cc4c7daef675219ab33260c854718eedc24f90fc874202c3b9c9e05"
+    },
+    {
+      "path": "backend/app/integrations/legacy/object_tracking_worker.py",
+      "bytes": 20924,
+      "sha256": "a9b46e1a68c3f472a1aef4c37d6be9d96fa964f8773942ae9568ae4699d9a80e"
+    },
+    {
+      "path": "backend/app/integrations/legacy/readiness_worker.py",
+      "bytes": 2759,
+      "sha256": "7a970f3a9728c4aa3101a6f4e9dbf23e6ce310d716ea32ec463ef39d79a095a6"
+    },
+    {
+      "path": "backend/app/integrations/legacy/sam3_hf_worker.py",
+      "bytes": 10418,
+      "sha256": "df63511d871a578dbf5b939966e1862f6aeee71014b2b81da4ac78b7bfd500ca"
+    },
+    {
+      "path": "backend/app/integrations/legacy/vidbee_adapter.py",
+      "bytes": 3142,
+      "sha256": "eb48432e48cba5d3684041f884cd0be97cfe08af4ae3e7005d5ff5d9cb62a106"
+    },
+    {
+      "path": "backend/app/integrations/legacy/vidbee_worker.py",
+      "bytes": 3507,
+      "sha256": "9f4d25d33163a3754d1b5fed78f7d3c6d4a1f24bbb57ec050185278d88f7becb"
+    },
+    {
+      "path": "backend/app/integrations/legacy/video_adapter.py",
+      "bytes": 8015,
+      "sha256": "12217900d055bc11c4fc2d3a637afec73dce7ec7d79d14211995dc011e42513d"
+    },
+    {
+      "path": "backend/app/integrations/legacy/video_worker.py",
+      "bytes": 23656,
+      "sha256": "797d5af52c012eede94b39bdf3cb8eecc152a187f4cbf5bd1d6d75abf563c529"
+    },
+    {
+      "path": "backend/app/integrations/local_cutout.py",
+      "bytes": 13212,
+      "sha256": "8927f9236ed934bc0eb29d3b5e0bba4dac43e1b352cf5fae63523e4d385dccaa"
+    },
+    {
+      "path": "backend/app/integrations/manual_compose.py",
+      "bytes": 86674,
+      "sha256": "b1ea04f039ac878199f53fa1d65c82214252aa7a1a50fc9f4eceae27cb38e15d"
+    },
+    {
+      "path": "backend/app/integrations/manual_compose_routes.py",
+      "bytes": 3362,
+      "sha256": "e23c6cc0d1fa1263944c711f3f45bcb77995135e3e38e8a24e994e8751e70881"
+    },
+    {
+      "path": "backend/app/integrations/matte_repair.py",
+      "bytes": 79537,
+      "sha256": "6bce270c9b1e5a00f2ec0ba023b5573eeef999a96c447a4b43cfba98c8a02e90"
+    },
+    {
+      "path": "backend/app/integrations/process_probe.py",
+      "bytes": 1348,
+      "sha256": "e8651ea44f9364a86e01210bca381f1b7068bc7ebba5a1a6131e7cfc272bfb1f"
+    },
+    {
+      "path": "backend/app/integrations/process_runner.py",
+      "bytes": 10389,
+      "sha256": "0c7b1c954eaabdcf87dfd334dae13f02d63b1a5a9a486392b21c7b295e9acddd"
+    },
+    {
+      "path": "backend/app/integrations/production_contracts.py",
+      "bytes": 2400,
+      "sha256": "958bab4852cae7e95ffed253fa2c6893fcfdede194820779c72169b47a76cc4f"
+    },
+    {
+      "path": "backend/app/integrations/production_readiness.py",
+      "bytes": 12306,
+      "sha256": "aa3356d0bef7d2505536a3c2fef9d5384f043af2a055cf34239de8f0041b797b"
+    },
+    {
+      "path": "backend/app/integrations/production_routes.py",
+      "bytes": 9656,
+      "sha256": "ae4c6ed87af07a630a3bd026b421b15c921ebebf3077185b54baae44ba3cb9e0"
+    },
+    {
+      "path": "backend/app/integrations/production_rules.py",
+      "bytes": 6334,
+      "sha256": "e7837fc87491f8e25de5d14c49083a966d479513a0b9815a190f468e6f0c7d9e"
+    },
+    {
+      "path": "backend/app/integrations/production_service.py",
+      "bytes": 171193,
+      "sha256": "b3df29d4713da13f866724e3a9a3d64d9fb71adf4a51aadbbbc0479501b73693"
+    },
+    {
+      "path": "backend/app/integrations/publishing/__init__.py",
+      "bytes": 82,
+      "sha256": "5f989c90058d18feb9c5183a478fc7f1c239f4aaa5e3369d018f5996f7ee8266"
+    },
+    {
+      "path": "backend/app/integrations/publishing/browser_adapter.py",
+      "bytes": 73442,
+      "sha256": "fec0ab177d7d7659afff2fa6257b6f87d02e5b5adfb42a17b2039f32b4636039"
+    },
+    {
+      "path": "backend/app/integrations/publishing/config.py",
+      "bytes": 6961,
+      "sha256": "7676d84447f5ff074a32709d43d3871f1ef5d49a348cf27be874784aa12135ae"
+    },
+    {
+      "path": "backend/app/integrations/publishing/description_generation.py",
+      "bytes": 25385,
+      "sha256": "64bb0947277a878a62f43c8669b08a0a25fcaad2a51bbf7b5a854d9c7a00a770"
+    },
+    {
+      "path": "backend/app/integrations/publishing/description_selector.py",
+      "bytes": 1863,
+      "sha256": "3d672fe5e5e3d4d97f8cc26125619de54d80abdc1172fc61f72df1f3e30e0329"
+    },
+    {
+      "path": "backend/app/integrations/publishing/description_sync_worker.py",
+      "bytes": 5117,
+      "sha256": "f0ce2f570c97c52b83605f6ff500d997dcc97fd057ff3423f22b7395da14cf96"
+    },
+    {
+      "path": "backend/app/integrations/publishing/hubstudio.py",
+      "bytes": 2974,
+      "sha256": "2f2d4dcf2fd88bc472c2843e6d1aec9dd7d67facdecb01317e05733e475ea39b"
+    },
+    {
+      "path": "backend/app/integrations/publishing/product_source.py",
+      "bytes": 11932,
+      "sha256": "0f503ddeef4ca8edcb368f6990a35ae8a6676279c1c17030e629caf157a5847d"
+    },
+    {
+      "path": "backend/app/integrations/publishing/product_source_worker.py",
+      "bytes": 8268,
+      "sha256": "7189db415d13773caf09f5fbd7541861806d7b7843321cd4e1d78239ba282e55"
+    },
+    {
+      "path": "backend/app/integrations/publishing/routes.py",
+      "bytes": 4396,
+      "sha256": "608eefcc53e9658c08ea3fa9730f4dcbf647f530cd2f8dfcaae574cd232fef49"
+    },
+    {
+      "path": "backend/app/integrations/publishing/schemas.py",
+      "bytes": 3677,
+      "sha256": "1c3c269ff1818e33f47984137a215f9fb0dfa783dea2abd0fbbebb250d44e9a5"
+    },
+    {
+      "path": "backend/app/integrations/publishing/service.py",
+      "bytes": 104656,
+      "sha256": "2b16370e625235b562c364a52e260195004bbb2f217fc8548bf5161f31e374c9"
+    },
+    {
+      "path": "backend/app/integrations/quality_adapter.py",
+      "bytes": 14125,
+      "sha256": "c052027e07a80743b901beee298623b828980b43a576adce7f7335436f21f8c3"
+    },
+    {
+      "path": "backend/app/integrations/quality_worker.py",
+      "bytes": 15775,
+      "sha256": "ace48ffaffc7beff23a57a31b4c8f59ef35c8511b4524141121936107713a8e9"
+    },
+    {
+      "path": "backend/app/integrations/review_service.py",
+      "bytes": 24827,
+      "sha256": "05872f7a5104764c9f5d46ad5452e859a4d2107ce9a6b2f5859e93f7db46340a"
+    },
+    {
+      "path": "backend/app/integrations/rpa_probe.py",
+      "bytes": 9818,
+      "sha256": "45863c3f15ea212b439cc524e46855a4bbd8a64ebe82b28a2141aeb68e2ad139"
+    },
+    {
+      "path": "backend/app/integrations/source_review.py",
+      "bytes": 16541,
+      "sha256": "5869ead754b753a06f8f416a60ac31dea3f242a6b0106afa5a571fe702106a94"
+    },
+    {
+      "path": "backend/app/local_catalog.py",
+      "bytes": 14530,
+      "sha256": "ef5619e91d0dafb33a5fb3e0602dff13f33061c8d318936297c8f9560a6bb890"
+    },
+    {
+      "path": "backend/app/main.py",
+      "bytes": 21445,
+      "sha256": "c503dfb757d24ac18f57becf73275014baea187bcf093857916f0b8878ce9100"
+    },
+    {
+      "path": "backend/app/mock_runtime.py",
+      "bytes": 9130,
+      "sha256": "4a72f492286985fbd02919210e6db764f1161ba9c4485d606ab987112fd97d58"
+    },
+    {
+      "path": "backend/app/models.py",
+      "bytes": 27884,
+      "sha256": "3d542ab60338d760299abdb8763e99f29ea03d7480a1460f5e83e0fbbdef013b"
+    },
+    {
+      "path": "backend/app/publishing.py",
+      "bytes": 6710,
+      "sha256": "10f66c9ce253d00fb91a36a1ff668b6ae5c6bd3b64e47a58c8f2a5213d986cb1"
+    },
+    {
+      "path": "backend/app/realtime.py",
+      "bytes": 1542,
+      "sha256": "b263a765fe4b478197dc2078d217fa8a2c759c6c86c09f8d15d8ee97942d7077"
+    },
+    {
+      "path": "backend/app/repository.py",
+      "bytes": 36194,
+      "sha256": "54d5bd4c922c534302e7b323a4d131de438efcd610b5c961ab67c9e249b0f550"
+    },
+    {
+      "path": "backend/app/runtime_paths.py",
+      "bytes": 989,
+      "sha256": "f87f8ed874b30e668a5478ab8011d88d4a216678cd99dc35cfa661090522d1ab"
+    },
+    {
+      "path": "backend/app/schemas.py",
+      "bytes": 15698,
+      "sha256": "0b91304e5b8445365361e75b327d45aeb60560513218d821135eee827c9ab837"
+    },
+    {
+      "path": "backend/app/seed.json",
+      "bytes": 36157,
+      "sha256": "c7074d88cca129656767db935a0025d02368583d54fae4d42e50e9eb565d31d8"
+    },
+    {
+      "path": "backend/app/service.py",
+      "bytes": 23733,
+      "sha256": "7a27d22dc575f6156707a21dead5f07f47d75941db60543409d0d43212dc7107"
+    },
+    {
+      "path": "backend/app/storage.py",
+      "bytes": 1529,
+      "sha256": "30751f8bfe5911ec4c826c4868532e630282a32057e87b92775b5716816e8686"
+    },
+    {
+      "path": "backend/migrations/env.py",
+      "bytes": 1197,
+      "sha256": "63f11f3c519df94c5ee74d44e8e4ec1501fcbc3c04f87ed3dedeb68eec059b3c"
+    },
+    {
+      "path": "backend/migrations/script.py.mako",
+      "bytes": 329,
+      "sha256": "377183e9be11f5bacf01bb982c75469f756af76af91b0df2a91d7d3464af09db"
+    },
+    {
+      "path": "backend/migrations/versions/0001_phase1.py",
+      "bytes": 18382,
+      "sha256": "400a98ac10d3450fd86fd73dcab2bb4b6ed27e2a2ac93854ea81188b19241525"
+    },
+    {
+      "path": "backend/migrations/versions/0002_collector_real.py",
+      "bytes": 7436,
+      "sha256": "c948138e5125bf6d661d8e127f3653fa1b8f48a9d6b6c86ba61b887d5fa8017f"
+    },
+    {
+      "path": "backend/migrations/versions/0003_error_retryable_default.py",
+      "bytes": 1684,
+      "sha256": "7e505e30bb3c9670028b81f87c206f1110050aa1b1f9d5792673ee9c01b3de3c"
+    },
+    {
+      "path": "backend/migrations/versions/0004_production.py",
+      "bytes": 2151,
+      "sha256": "db7c95fd68b34eca0a81d0a8edc1ff4f2a3a627f19b8444d3cb434ffd5a45852"
+    },
+    {
+      "path": "backend/migrations/versions/0005_workflow_execution.py",
+      "bytes": 653,
+      "sha256": "c91d3f578d346bae93dc13b3e77b570c4cfff9dbd4601734a3ccba3261dca5a6"
+    },
+    {
+      "path": "backend/migrations/versions/0006_production_supervision.py",
+      "bytes": 1166,
+      "sha256": "396fb8afdbb057bfae1613057259a7bf450705045aecbee9f72107926bf88028"
+    },
+    {
+      "path": "backend/migrations/versions/0007_real_publishing.py",
+      "bytes": 7263,
+      "sha256": "ad3247d9fed29a9552640067957bf26e455f7a19afcca43ecc4adec88ff6779d"
+    },
+    {
+      "path": "backend/migrations/versions/0008_publishing_context.py",
+      "bytes": 691,
+      "sha256": "54287cdadaf02cd2f0081f3f311953035e9bdccb3a0cb81c38e4ecf54c260a12"
+    },
+    {
+      "path": "backend/migrations/versions/0009_description_generation.py",
+      "bytes": 1680,
+      "sha256": "d7d2a13fa6b899a8694a5f843528c3628a05fd2d6a33532bc0b7ae8a0a86faa3"
+    },
+    {
+      "path": "backend/migrations/versions/0010_asset_identity.py",
+      "bytes": 2886,
+      "sha256": "e7e7149f9e0018c831dcfa1aed5ec63ca5a374d957ed4cf0558431db76ebe354"
+    },
+    {
+      "path": "backend/migrations/versions/0011_collection_identity.py",
+      "bytes": 1286,
+      "sha256": "57a4e4a23ab4a5a2ffc55e1fdf5d6b7963ec4a4e5cd2ee77b271227a5a060e06"
+    },
+    {
+      "path": "backend/requirements.txt",
+      "bytes": 199,
+      "sha256": "990c7fbfeeeb51298ff2813b0270d461ffbdf7293c1001c7c2bc66a0b7b291bc"
+    },
+    {
+      "path": "backend/scripts/closure_family_fixture.py",
+      "bytes": 12112,
+      "sha256": "866eba0ad4f200c4ad4e569c5022b78ef8215b82dc2842b47af14d1ed655930d"
+    },
+    {
+      "path": "backend/scripts/closure_runtime_evidence.py",
+      "bytes": 5843,
+      "sha256": "ae97ffab716acdd74cc5b7f2a7b58703d92c5389063e7ab1da0120d8692a4ffb"
+    },
+    {
+      "path": "backend/scripts/collector_dedupe.py",
+      "bytes": 12082,
+      "sha256": "8844b6126c0bca1de3af8fa49b0249949cd17a4363fea1d95e67c65df2ccb891"
+    },
+    {
+      "path": "backend/scripts/verify_closure_family.py",
+      "bytes": 3911,
+      "sha256": "e5b41b210f70031e40a82df8790703555585d558813ef694fbd9a8c1f6b4da8b"
+    },
+    {
+      "path": "backend/tests/test_alpha_preview.py",
+      "bytes": 10454,
+      "sha256": "32577fb2162aac40d69135a0f783bab541b4fdd750415425759de2e35ccae5b8"
+    },
+    {
+      "path": "backend/tests/test_api.py",
+      "bytes": 8111,
+      "sha256": "6bdd260c92279c32da6def962ec63258f396c99ad11a95e93cab8f512f96611e"
+    },
+    {
+      "path": "backend/tests/test_asset_deletion.py",
+      "bytes": 52596,
+      "sha256": "fd1eae6e63c01973b9e25dfc74b08ff11910f22775b0bf67e78052d03f150242"
+    },
+    {
+      "path": "backend/tests/test_asset_identity_migration.py",
+      "bytes": 5491,
+      "sha256": "ccbc5d1702c683189cba9fa5b9f191947c62145b2fe689ef6905b4d6d13a553d"
+    },
+    {
+      "path": "backend/tests/test_asset_registry.py",
+      "bytes": 27536,
+      "sha256": "bfe4d7f3568fecafb09385be29739d121a4de64348f863e10f5cac01193fe2dd"
+    },
+    {
+      "path": "backend/tests/test_asset_registry_routes.py",
+      "bytes": 11689,
+      "sha256": "48e42f44958ae99adb08ea4cf95324f4c9b041a69a8af59d2abccd61b94e537e"
+    },
+    {
+      "path": "backend/tests/test_background_person_gate.py",
+      "bytes": 7723,
+      "sha256": "ef9bafa54ec89b007baf9a0f5a08b5dae18afa17237704a89785778e113e8bb5"
+    },
+    {
+      "path": "backend/tests/test_browser_preparation.py",
+      "bytes": 13317,
+      "sha256": "40f4507e69b94782573ee2f080d993d89a1ae5239305d4619572d7262f36865c"
+    },
+    {
+      "path": "backend/tests/test_clean_initialization.py",
+      "bytes": 6622,
+      "sha256": "1a272e011630b83c6731fdb1be5c901e2b522f90a80af03e3f87f68dc1e95d68"
+    },
+    {
+      "path": "backend/tests/test_collection_identity_atomic.py",
+      "bytes": 16462,
+      "sha256": "be6658311c905665cbf783de4fcc06212ddd554d7a56b3f8a4130d098247da9f"
+    },
+    {
+      "path": "backend/tests/test_collector_board.py",
+      "bytes": 7340,
+      "sha256": "45accd38ebce0ea1428bb04c591b3bcfa5b6643563769ec5856f22d577011ac3"
+    },
+    {
+      "path": "backend/tests/test_collector_bridge.py",
+      "bytes": 25354,
+      "sha256": "093f056a488e6afa57d1f1846453cc1f174812c8f18aa847babf5fa9001bbaec"
+    },
+    {
+      "path": "backend/tests/test_collector_candidate_review.py",
+      "bytes": 9010,
+      "sha256": "db84f616158604ec9afd675d746b01852c37c6a2f2d863c77abd07868733693a"
+    },
+    {
+      "path": "backend/tests/test_collector_discovery.py",
+      "bytes": 27854,
+      "sha256": "d590857d7891957c4c7f206b88b17832f5e8033f821fa4122b2fc22490d0ed5d"
+    },
+    {
+      "path": "backend/tests/test_collector_history_dedupe.py",
+      "bytes": 23828,
+      "sha256": "31060e98e3154cad86d277950c8495e2d2b9b951b2c0ccd0db8249d32f752308"
+    },
+    {
+      "path": "backend/tests/test_collector_inputs.py",
+      "bytes": 18647,
+      "sha256": "f6997cb6197d325f853f192c2a4208e943ac20994ae035e3f22ba716346a38d2"
+    },
+    {
+      "path": "backend/tests/test_collector_persistence.py",
+      "bytes": 15047,
+      "sha256": "14f321fbe43d326a5056ade433a3594d3e464dfc97f8d02ecab31e81e10cad40"
+    },
+    {
+      "path": "backend/tests/test_collector_preflight.py",
+      "bytes": 17231,
+      "sha256": "79f7b7b394dcb73ffbee5a9a5df1affa5f8c00c52412110774c33a0b69596f4c"
+    },
+    {
+      "path": "backend/tests/test_collector_provenance.py",
+      "bytes": 11308,
+      "sha256": "a1e038706d76982a43994ead77563abb874ac64df673fd3beea8239be19e175b"
+    },
+    {
+      "path": "backend/tests/test_collector_triage.py",
+      "bytes": 18093,
+      "sha256": "a4b12fb1fd31e3c35e6b3e484f87075fdb72f73a621cde7c02d5f73d7b4e14cf"
+    },
+    {
+      "path": "backend/tests/test_comfy_assets.py",
+      "bytes": 26662,
+      "sha256": "08fda1825cb37becf73a0d1d49a5308e4ab956ea851bdcc4d7914359461ad05c"
+    },
+    {
+      "path": "backend/tests/test_comfy_identity.py",
+      "bytes": 7939,
+      "sha256": "04185ee1ddbca5e7a229df6d4bf32f662f0858a7e93c5713812ebeb64b9365c7"
+    },
+    {
+      "path": "backend/tests/test_cutout_checkpoint_resume.py",
+      "bytes": 12757,
+      "sha256": "b53ad04e52f841bbe9e35f9aa901f6fc1c157b485fd0ff83fbbd5cdb3750aa0e"
+    },
+    {
+      "path": "backend/tests/test_cutout_checkpoint_service.py",
+      "bytes": 9610,
+      "sha256": "966d26b383698c7f3f92224782dd922f26841f94e5a5ff758e9415eb6409cdbe"
+    },
+    {
+      "path": "backend/tests/test_cutout_quality.py",
+      "bytes": 13881,
+      "sha256": "996565505cbfdc364e4dd1590bc278a2eab15866162474b705b60d39c6a4565a"
+    },
+    {
+      "path": "backend/tests/test_deferred_production_continue.py",
+      "bytes": 32792,
+      "sha256": "7aa24c46108133e1800efdf2bd37d414925f322725d30bae52cbf0789d9e8688"
+    },
+    {
+      "path": "backend/tests/test_description_generation.py",
+      "bytes": 16303,
+      "sha256": "966a9792652d582b3f53d25b9c797b87d7b46cb9f064db56a570cb5d6b60869d"
+    },
+    {
+      "path": "backend/tests/test_description_reuse.py",
+      "bytes": 17303,
+      "sha256": "9c848bc471a2980e6dbdf206e87c1acd29f3706ef2f726a5b545d71506b8e880"
+    },
+    {
+      "path": "backend/tests/test_download_recovery.py",
+      "bytes": 54726,
+      "sha256": "179256eddd99fc3a9d263ec064dba64b6414112b519d39d2f6dedde200bb6f21"
+    },
+    {
+      "path": "backend/tests/test_environment_batch_restore.py",
+      "bytes": 7790,
+      "sha256": "82420079d6b60e097778dd4074a606e95ab8bfec6193af98ff26c16937991407"
+    },
+    {
+      "path": "backend/tests/test_existing_hub_browser.py",
+      "bytes": 24378,
+      "sha256": "ccead2d11059952be5824d3f15ad7f9747128e539c73de7d6ec517657d7c1760"
+    },
+    {
+      "path": "backend/tests/test_external_budget.py",
+      "bytes": 2427,
+      "sha256": "8640286c27c830751e099bf0775158a3f6daaae94900296ed3546779f4acc4aa"
+    },
+    {
+      "path": "backend/tests/test_factory_collector_rules.py",
+      "bytes": 11388,
+      "sha256": "6823ca9e2191c156b167240630125f07d3f137dc0cce0beccb22fa68730af40b"
+    },
+    {
+      "path": "backend/tests/test_factory_launcher.py",
+      "bytes": 16525,
+      "sha256": "927a15c09c8d103d1afeb4f181d333c0c2fd6baeb4c0fec06da9e3233b04494f"
+    },
+    {
+      "path": "backend/tests/test_factory_rpa_download.py",
+      "bytes": 29996,
+      "sha256": "ac10922aacf9e2d8b5331d83f323f7301320910a79a2bd04dd7699c0e0eb158f"
+    },
+    {
+      "path": "backend/tests/test_first_composition_gate.py",
+      "bytes": 20676,
+      "sha256": "e91e45362d8c09cf0fcd67839d77bdb20723cf73f3f093544ff65ad293019a05"
+    },
+    {
+      "path": "backend/tests/test_legacy_output_protection.py",
+      "bytes": 7795,
+      "sha256": "032701133444448ff8951f7436961220ebbfe706d9998026e6c2d5c3e8db2de6"
+    },
+    {
+      "path": "backend/tests/test_local_catalog.py",
+      "bytes": 10261,
+      "sha256": "99343f16c204be3392587c3d1d2e14130492bb974dffa39da6fe74873f58ac7c"
+    },
+    {
+      "path": "backend/tests/test_local_cutout.py",
+      "bytes": 6241,
+      "sha256": "6cff5c24f3f7ac863999c2a360c7d69e35c626c87122406ddf7195bd9d5686e6"
+    },
+    {
+      "path": "backend/tests/test_manual_compose.py",
+      "bytes": 41312,
+      "sha256": "803282b4c8f027db821a4215feec9b880049fa7ac12df5e1471a03a5d31ef2c7"
+    },
+    {
+      "path": "backend/tests/test_manual_compose_performance.py",
+      "bytes": 10400,
+      "sha256": "47d371b5ca13994ebe14521b4e81e1a91b5e8a7609efb5b3d6e9c6423a2c99e3"
+    },
+    {
+      "path": "backend/tests/test_manual_review_scope.py",
+      "bytes": 14090,
+      "sha256": "e891528803d8979bd7dd1a957d33ae7a972c1469e6cd52083ba3752d464779cd"
+    },
+    {
+      "path": "backend/tests/test_matte_repair.py",
+      "bytes": 38997,
+      "sha256": "53bb889ba3da2d0694f1764199ef15b062f6a7ae202bbe11acced45da6f682da"
+    },
+    {
+      "path": "backend/tests/test_matte_repair_events.py",
+      "bytes": 11318,
+      "sha256": "f72cc8a2473a639dd0c18d0ab5d30c04ca951ed2d235572b496f5582e14fbf03"
+    },
+    {
+      "path": "backend/tests/test_matte_repair_import.py",
+      "bytes": 20803,
+      "sha256": "20ddbfe1bc4f9f7e78169671f40964b59f90dfb2acf3beddb2fd13a2c989a46f"
+    },
+    {
+      "path": "backend/tests/test_matte_tracking_cache.py",
+      "bytes": 7463,
+      "sha256": "5baac1ca243fc4d7addb83da7508d5b1d0d6939272bf7654a2427f96a8ab899b"
+    },
+    {
+      "path": "backend/tests/test_migration_data.py",
+      "bytes": 19152,
+      "sha256": "d3b933db681b6e4e709fef6dae2c268dc9ab69727a51a3b9c2652be58914b63e"
+    },
+    {
+      "path": "backend/tests/test_mock_workflow.py",
+      "bytes": 14094,
+      "sha256": "d19fe99278f58eab0f361e100321356bbd7fc2492cd62f0ff670fb68a2b18b3b"
+    },
+    {
+      "path": "backend/tests/test_platform_runtime.py",
+      "bytes": 7139,
+      "sha256": "4e46adbbfdfbb44df6ddfbc0af9796d407b84eb059c81fe4f85263126d6a5274"
+    },
+    {
+      "path": "backend/tests/test_processing_run_event.py",
+      "bytes": 17014,
+      "sha256": "ce43c1b2162bb8fcfce333ddc1c955923e313725ac3c5c9e703fb2bb4becd7d8"
+    },
+    {
+      "path": "backend/tests/test_production_automation.py",
+      "bytes": 42187,
+      "sha256": "5c3649c17038f19709c368bf6bb2b4f667c3165cddd0223da045959c73ff9869"
+    },
+    {
+      "path": "backend/tests/test_production_control_events.py",
+      "bytes": 5027,
+      "sha256": "ce6023587ea842b75658bd6d90efda9d2ca38fdcac6273c2347b9d572cc04eb7"
+    },
+    {
+      "path": "backend/tests/test_production_integrity.py",
+      "bytes": 5496,
+      "sha256": "e06d3248e98cd5280308adf43e18925d5dda39135e8b891463fb39dd2942bbb0"
+    },
+    {
+      "path": "backend/tests/test_production_progress.py",
+      "bytes": 2241,
+      "sha256": "be665bd4d4ea0fc31b18107c7b13d7776e3af0ff2080916ba0d037d887760472"
+    },
+    {
+      "path": "backend/tests/test_production_queue.py",
+      "bytes": 50306,
+      "sha256": "f0b07594a5ed7c9f9714c97fbc0de4692337cde59cd8e202a36414c871af6685"
+    },
+    {
+      "path": "backend/tests/test_production_state_scope.py",
+      "bytes": 11621,
+      "sha256": "af22ebed6f7b235ff49129783d8513232885eea67eadceae254724779d565504"
+    },
+    {
+      "path": "backend/tests/test_publishing_attachment_recovery.py",
+      "bytes": 29127,
+      "sha256": "768829b93b1c54a30f680cefb7d1a47b94274fad93729e37b8656e892d657922"
+    },
+    {
+      "path": "backend/tests/test_publishing_browser_steps.py",
+      "bytes": 8847,
+      "sha256": "7fe5d1371c3c07bf408fcd047fb49ea93e60e5e594e48fe48f24d15a12d8ae04"
+    },
+    {
+      "path": "backend/tests/test_publishing_browser_submit_contract.py",
+      "bytes": 16774,
+      "sha256": "6083df5692f80547119fc5f0207571c9ddeac6b42a965f0ab1016dafe60b9ae7"
+    },
+    {
+      "path": "backend/tests/test_publishing_config.py",
+      "bytes": 4154,
+      "sha256": "b27ad11ec6065513d6fc6f91f076c0459f1ab24698d061871da336e35944e2b5"
+    },
+    {
+      "path": "backend/tests/test_publishing_draft_gate.py",
+      "bytes": 7471,
+      "sha256": "3fae94bdbe1a32e6d1a1a1c596c0504d36c017e0fe3ebd9bcfbad79ec05306ee"
+    },
+    {
+      "path": "backend/tests/test_publishing_product_matching.py",
+      "bytes": 18710,
+      "sha256": "93cdf7831a35e89ddcf8d3ba465737d4fd2be26b47735a509116d8b3080c4a8b"
+    },
+    {
+      "path": "backend/tests/test_publishing_product_source.py",
+      "bytes": 40341,
+      "sha256": "d8dd09c58ed23c0e54b0e2a5dfe4c7b3241038c0c6f1052457be9e2e83d7823c"
+    },
+    {
+      "path": "backend/tests/test_publishing_studio_readback.py",
+      "bytes": 13446,
+      "sha256": "c3e002fcaff98876f44306e4fc7c9364fa7b9264b9db8d25f7fbcda3546e7f95"
+    },
+    {
+      "path": "backend/tests/test_publishing_submit_gate.py",
+      "bytes": 18722,
+      "sha256": "00effc0f6856ab9ffdb15f176416ee457883a90c98cd401340edced396fba21b"
+    },
+    {
+      "path": "backend/tests/test_quality_run_evidence.py",
+      "bytes": 4681,
+      "sha256": "0171e0c4191ea463c734d74d1e459c20208fd9ebf156a63f5caf76717a4da5e6"
+    },
+    {
+      "path": "backend/tests/test_readonly_asset_roots.py",
+      "bytes": 23113,
+      "sha256": "fe2bcd5828afc65176d037db79582cd0724b4a0af4ca73584556ae5d541980c4"
+    },
+    {
+      "path": "backend/tests/test_real_collector.py",
+      "bytes": 16957,
+      "sha256": "b9ca0862c0db6f60d5131e96805454f366c7b045d388b68439da27c23201765d"
+    },
+    {
+      "path": "backend/tests/test_real_publishing_models.py",
+      "bytes": 5493,
+      "sha256": "7e521a2254ee558d7b5ee0c080f90d2fead53b17dadce66c5eb0c1a144eeaa35"
+    },
+    {
+      "path": "backend/tests/test_real_publishing_service.py",
+      "bytes": 43610,
+      "sha256": "5f0f7a2acd6d28bf387606c4bf52c97456781236d84dcea849133e09369b54c0"
+    },
+    {
+      "path": "backend/tests/test_real_review.py",
+      "bytes": 19269,
+      "sha256": "3b35bf063bc24b06472bbe6144c7e794773da84a4734cf3e56c3cdc84bfc3d0e"
+    },
+    {
+      "path": "backend/tests/test_repaired_person_selection.py",
+      "bytes": 11202,
+      "sha256": "8d007802b1807c331350804d0a9b89615e3f4198ad3d463163e6b79d56db6896"
+    },
+    {
+      "path": "backend/tests/test_review_during_production.py",
+      "bytes": 14014,
+      "sha256": "a9cf96a10d491b5505e0664a1d4300405f5f29049d4e94d7bef7e1a921633ad7"
+    },
+    {
+      "path": "backend/tests/test_review_lineage_scope.py",
+      "bytes": 31624,
+      "sha256": "11c3ae1cea45bf2a310ece10c728e20e9e0a5fe47d3934c718dbf823f462bd00"
+    },
+    {
+      "path": "backend/tests/test_rpa_probe.py",
+      "bytes": 8806,
+      "sha256": "c2df6b8eb83353d276583d00395a9969c93f4bd59d2072143ec8387985b43065"
+    },
+    {
+      "path": "backend/tests/test_sam3_hf_nodes.py",
+      "bytes": 6213,
+      "sha256": "80f02938c89225eb481c21f86e20e48b3b8c1b99990c789a9d0cad5f61557a78"
+    },
+    {
+      "path": "backend/tests/test_saved_background_compose.py",
+      "bytes": 23884,
+      "sha256": "d72f044d03f79ef235235d7e04312ca0e9023ed2be5e003ee263a4d128172a83"
+    },
+    {
+      "path": "backend/tests/test_scoped_asset_reads.py",
+      "bytes": 9002,
+      "sha256": "9a2f3c5565eed3f7d276a395c2f18e6dc97dedc38fbdab7cc5468970863b9d35"
+    },
+    {
+      "path": "backend/tests/test_shutdown_boundary_resume.py",
+      "bytes": 21510,
+      "sha256": "c9a24a3a791fbd9486a6a75f434c40239706e00d84a0a6ed6c2789f019021c70"
+    },
+    {
+      "path": "backend/tests/test_source_review.py",
+      "bytes": 18644,
+      "sha256": "ba93b1e9538b6de8e073bbbd8bbc5b5bd205754fec590b9800028bc18e5baeff"
+    },
+    {
+      "path": "backend/tests/test_stage_only_production.py",
+      "bytes": 9113,
+      "sha256": "cd158d7767d9243b56f45bba43738f959079b69ff87bb6ceaafbaa62b6506b0d"
+    },
+    {
+      "path": "backend/tests/test_stage_process_events.py",
+      "bytes": 8409,
+      "sha256": "96efcd06383674adde5d8b9fb5dcc0a95950bbc106cb58fa183d04f479874bda"
+    },
+    {
+      "path": "backend/tests/test_task_control_api.py",
+      "bytes": 7705,
+      "sha256": "06c7236e456c4e74e608f4af96cfae77044a661155a362de00a3fe3897b1ff68"
+    },
+    {
+      "path": "backend/tests/test_technical_compose_cache.py",
+      "bytes": 10313,
+      "sha256": "55baf2680d55e183730ccc8efd0eaf3a70afea7cdd82669e2720f98a22a882cc"
+    },
+    {
+      "path": "backend/tests/test_tencent_input_worker.py",
+      "bytes": 8824,
+      "sha256": "622f0fa3539133a1bb90b3c657df4bca9723c80e88e9366182ee3dec18ba19b2"
+    },
+    {
+      "path": "backend/tests/test_tracking_cache.py",
+      "bytes": 2370,
+      "sha256": "f7f8de64ca8f6f3b0a178709fd104b1ef6e2d137b99ece8ab4e61f963bb118bf"
+    },
+    {
+      "path": "backend/tests/test_video_providers.py",
+      "bytes": 12484,
+      "sha256": "d8b26e7e418e835408a8198eb811143021183cbb725aae9f11c219c99225bb8b"
+    },
+    {
+      "path": "backend/tests/test_web_only_recovery.py",
+      "bytes": 2778,
+      "sha256": "8e1e59597119edab9f335d912a5a4e2d1faa9baba49176aa54a3e1eb3b4fcfac"
+    },
+    {
+      "path": "backend/tests/test_windows_integration_paths.py",
+      "bytes": 6017,
+      "sha256": "eb4e749f492a98191f88aa7f286e355b3f6e973662c91d4c1eabcdd702cdbe94"
+    },
+    {
+      "path": "backend/tests/test_workflow_execution.py",
+      "bytes": 9597,
+      "sha256": "de01a5d00ce40a0772a035712dd0cb7935929cc3cf1511955ed4afd1a7dc9b48"
+    },
+    {
+      "path": "comfy_nodes/FactorySAM3HFV1/__init__.py",
+      "bytes": 12001,
+      "sha256": "c7e0d915eb437348f82379eed68fa6a0af71b65453abf070a6161d1d62869a45"
+    },
+    {
+      "path": "comfy_nodes/FactoryVideoObjectsV1/__init__.py",
+      "bytes": 3798,
+      "sha256": "339566b5c0a82ed5e98b9200becd133ba43e61e220ebe9b8348c8c585f83354f"
+    },
+    {
+      "path": "comfy_nodes/factory_foreground_assets/__init__.py",
+      "bytes": 5676,
+      "sha256": "7520de08a3d930dbef862d9c819ba717b305ccfb86b905fb9d022d2b70c0ca56"
+    },
+    {
+      "path": "config.example.yaml",
+      "bytes": 580,
+      "sha256": "467e1056649854eab110029474c8f85c2b7665eb7d599b3898fe5cf5a12d87fa"
+    },
+    {
+      "path": "config/launcher.example.json",
+      "bytes": 269,
+      "sha256": "6c7aa5ab4800ecd4def6a40d01b04e043fc37634c12a47b7817b27a933bfc985"
+    },
+    {
+      "path": "config/publishing.windows.example.yaml",
+      "bytes": 576,
+      "sha256": "de91932afb1dddebb63f95055b8f542e4e138695ab74f12f6b8c0bb7e11d6c83"
+    },
+    {
+      "path": "config/windows.backend.env.example",
+      "bytes": 997,
+      "sha256": "07981a763785f899b329c6b3a16cae8e76808d2d02c005dab11b0c2e55d08d14"
+    },
+    {
+      "path": "config/windows.launcher.example.json",
+      "bytes": 370,
+      "sha256": "7b9fd59d4a3a5a6481f8ad270cd190060baac65bbc9bb74dd91e230f8f7cb8b2"
+    },
+    {
+      "path": "frontend/.env.example",
+      "bytes": 107,
+      "sha256": "a0e505d9ddd7031471cf1f50b68be4621acdd185c6c75f1cafec8aea72ef5e6f"
+    },
+    {
+      "path": "frontend/.gitignore",
+      "bytes": 494,
+      "sha256": "e279dc634935e6657838cbaf65c2500a9c1e48ad6dbf2c388a93fb03dff2409f"
+    },
+    {
+      "path": "frontend/AGENTS.md",
+      "bytes": 679,
+      "sha256": "063098f6cb31bb44c6f8fbea25b3876de7ee1e5f7d00a50dbab506f6415eb7f0"
+    },
+    {
+      "path": "frontend/components.json",
+      "bytes": 520,
+      "sha256": "7f89b1e9e3995be8620be3162df8e08b7dd512f894fb0accb559193138fdc390"
+    },
+    {
+      "path": "frontend/eslint.config.mjs",
+      "bytes": 483,
+      "sha256": "c6752f242afc0b7fbd47efe50b81a93a96b5b3ee64715b7ce83daaa639937afc"
+    },
+    {
+      "path": "frontend/next.config.ts",
+      "bytes": 888,
+      "sha256": "6847aeddbec104a7401d41c739326538f4fc32f21587b9142b0c81852e1255f6"
+    },
+    {
+      "path": "frontend/package-lock.json",
+      "bytes": 353966,
+      "sha256": "85e6262914650dffce5bdb1ab59ccf95c0149152a6de275d0fe2554d296ce3fe"
+    },
+    {
+      "path": "frontend/package.json",
+      "bytes": 983,
+      "sha256": "6ee40c60f0bbacda0a6ace423d0cbd10a05a824b37ff63085b7a2121f57e70d4"
+    },
+    {
+      "path": "frontend/public/mock/garment.svg",
+      "bytes": 454,
+      "sha256": "967e8c416901fee135cb388197636af81a721de132c46d6f04d50e2ee0b18465"
+    },
+    {
+      "path": "frontend/public/mock/portrait.svg",
+      "bytes": 923,
+      "sha256": "6bc4167e4f0df4783909e7062187499101ed481f515de4199957ddebb15c49ae"
+    },
+    {
+      "path": "frontend/public/mock/product.svg",
+      "bytes": 854,
+      "sha256": "75f7db71e1724103024f070c8b4008b3546cf5b01f1538d7b75c11ef4800ed20"
+    },
+    {
+      "path": "frontend/public/mock/room.svg",
+      "bytes": 749,
+      "sha256": "6b2fc6338771281c0a5323c3696e75c9a237c4355550b1c320f07dcd8a2b0dc9"
+    },
+    {
+      "path": "frontend/src/app/accounts/[id]/page.tsx",
+      "bytes": 16787,
+      "sha256": "33563db02887b63e6e961d025bfc64f185002d0fe6cf8e7fe6edb2c7406caf5a"
+    },
+    {
+      "path": "frontend/src/app/accounts/page.tsx",
+      "bytes": 143,
+      "sha256": "4d808e57d8e9ca32b063077aa988cebf2be59cbfb2cfaf19c665bddc345bed63"
+    },
+    {
+      "path": "frontend/src/app/api/launcher/route.ts",
+      "bytes": 489,
+      "sha256": "36e1de06726f77afbab4f5646e72b7611ab056076ca326ac37f5f92a756d8a3b"
+    },
+    {
+      "path": "frontend/src/app/assets/[id]/page.tsx",
+      "bytes": 11384,
+      "sha256": "df9d20b3b77969c151391f6bb4c5303149047f12bf5ad9ca7d7e4b79972793de"
+    },
+    {
+      "path": "frontend/src/app/assets/page.tsx",
+      "bytes": 11289,
+      "sha256": "315794da77cecd37af08ee3b5312d410a59be99ccba84436697b3f8881516c01"
+    },
+    {
+      "path": "frontend/src/app/background/page.tsx",
+      "bytes": 2185,
+      "sha256": "b1aec255cc7ca26ae16d7348f0f73676cae2a76194debf9c7e3260842fab9060"
+    },
+    {
+      "path": "frontend/src/app/collector/page.tsx",
+      "bytes": 364,
+      "sha256": "b9377c282228da285157b743abc3df8ed026bf8cb32b22b0e31c797f82b52a1c"
+    },
+    {
+      "path": "frontend/src/app/compose/page.tsx",
+      "bytes": 3126,
+      "sha256": "1557560d067ce90693634637bdcd3bf0456706afd6e2d5aeb22cb082ed5bf688"
+    },
+    {
+      "path": "frontend/src/app/cutout/page.tsx",
+      "bytes": 2101,
+      "sha256": "549affcb2fde85d552410564df6cd39c04a90e8b1c0c6830a04a0cb390c328ab"
+    },
+    {
+      "path": "frontend/src/app/dashboard/page.tsx",
+      "bytes": 12606,
+      "sha256": "3bf100db6bd49cd63757bbeaeb083bacab7eb2e22f3f5169325629def5d1935b"
+    },
+    {
+      "path": "frontend/src/app/error.tsx",
+      "bytes": 419,
+      "sha256": "e43a0abec48afd0cdef7143497acbd36ddad71cecf3a69f8f31842ae168a4e7e"
+    },
+    {
+      "path": "frontend/src/app/globals.css",
+      "bytes": 4899,
+      "sha256": "81096973332f721a8fcf51fc96e68cd3a702156d450c51601f20e7996a40193e"
+    },
+    {
+      "path": "frontend/src/app/icon.svg",
+      "bytes": 284,
+      "sha256": "b292894d79d810737f15bd00b6b635c4e703f67609fcd4233dff4398a05a30bb"
+    },
+    {
+      "path": "frontend/src/app/layout.tsx",
+      "bytes": 606,
+      "sha256": "c8fcd8f5d34a05c41f8db660c153aa21b93c32de4c8451e9858b0c26b5df537b"
+    },
+    {
+      "path": "frontend/src/app/loading.tsx",
+      "bytes": 222,
+      "sha256": "a4034c875731236208f1e56048d7c41afc0618370fcfc5fa20d2ca46cc88a003"
+    },
+    {
+      "path": "frontend/src/app/not-found.tsx",
+      "bytes": 399,
+      "sha256": "d4a308645fba248bbb5c5dc8205a706515bda128fdf9da0684a606ffde591a44"
+    },
+    {
+      "path": "frontend/src/app/page.tsx",
+      "bytes": 103,
+      "sha256": "d103e462d6867c4ed625bb26b41b1587de2f93f6c91b8e1c4966ad31dc913f7f"
+    },
+    {
+      "path": "frontend/src/app/products/page.tsx",
+      "bytes": 185,
+      "sha256": "b9bb93958ab987451b39382501dd2c130ef69e9f12c9e95cc2fcb38dc0139a68"
+    },
+    {
+      "path": "frontend/src/app/publish/page.tsx",
+      "bytes": 140,
+      "sha256": "313315054f15889d52ce97070b4dcb242390fb5408c53bdef7c19ed0eb4ab2e2"
+    },
+    {
+      "path": "frontend/src/app/review/page.tsx",
+      "bytes": 17362,
+      "sha256": "78b718847d1782aff7cdd2c9688bbee7df52cd8aed2244fd5a5772a564c93d5a"
+    },
+    {
+      "path": "frontend/src/app/settings/page.tsx",
+      "bytes": 13215,
+      "sha256": "0d530f7d5fa89501720041152d731cb019af25ae132361642995161272269fc4"
+    },
+    {
+      "path": "frontend/src/app/tasks/[id]/page.tsx",
+      "bytes": 13087,
+      "sha256": "7e0809ee88775ccc0aaef332145717a759112fac91471c60f56a4dc9e8df18b8"
+    },
+    {
+      "path": "frontend/src/components/app-shell.tsx",
+      "bytes": 8416,
+      "sha256": "27c292121541a178577de16f987fd97cb3595b06ccb3708679f745062741dbfd"
+    },
+    {
+      "path": "frontend/src/components/asset-deletion.tsx",
+      "bytes": 16729,
+      "sha256": "515e4f7acb2ef2d1e07c9af5e3f469e939768617d0c2753c04404a49a7fbc42d"
+    },
+    {
+      "path": "frontend/src/components/asset-picker.tsx",
+      "bytes": 12330,
+      "sha256": "bb8307201394fa4e6ef76181f6c6aa5108890d93dc3f26001df9306b8218be5d"
+    },
+    {
+      "path": "frontend/src/components/cancelled-batch-restore.tsx",
+      "bytes": 5843,
+      "sha256": "d484a3a401bd3c49de60840ccecef28c7015b84b0f66e0c020e7043aeb42c71a"
+    },
+    {
+      "path": "frontend/src/components/collector-candidate-review.tsx",
+      "bytes": 14729,
+      "sha256": "4373223b7e5c020a01ebe907c1484b9c5edcb8f7a35212053dbd9944f248daf5"
+    },
+    {
+      "path": "frontend/src/components/collector-unattended.tsx",
+      "bytes": 5981,
+      "sha256": "4172503731c54e97edca0283fe6c317e4555c83c38c4ca9a9f910eb9c144e892"
+    },
+    {
+      "path": "frontend/src/components/description-generator.tsx",
+      "bytes": 9010,
+      "sha256": "4cf9f9137ab0699dd6aa285122410b811578b60869e5ec962baad6145a662d7b"
+    },
+    {
+      "path": "frontend/src/components/description-reuse.tsx",
+      "bytes": 5485,
+      "sha256": "e35d647b1ee3c0eb8c468f4d334782d0006e2c1803e856b29109067de0d8a28a"
+    },
+    {
+      "path": "frontend/src/components/factory-ui.tsx",
+      "bytes": 7720,
+      "sha256": "6cf78a2d84a23f17fdfa1dadcd747249dd4111a4f4d05f4cf605a0315e1bb64a"
+    },
+    {
+      "path": "frontend/src/components/integration-collector.tsx",
+      "bytes": 44710,
+      "sha256": "c5d298c3ef93a187c826f4ac7321b5ad2501129d5d41bfb378a1367b64d91dae"
+    },
+    {
+      "path": "frontend/src/components/integration-task-detail.tsx",
+      "bytes": 18172,
+      "sha256": "b523095aa26db1a1a3ca287494fa96eafc74a876714947e267734c490e7a9fe6"
+    },
+    {
+      "path": "frontend/src/components/local-account-form.tsx",
+      "bytes": 4974,
+      "sha256": "a344a04d00b94a54d7e97e6669417e7a6844111a9cf3cbb726636af0aecb3e55"
+    },
+    {
+      "path": "frontend/src/components/local-cutout-import.tsx",
+      "bytes": 2464,
+      "sha256": "c1c8b251d4387a6d5451bf5a2d0e765c4c85ccc5f1e078be64643d07e29d7501"
+    },
+    {
+      "path": "frontend/src/components/manual-compose.tsx",
+      "bytes": 25493,
+      "sha256": "717a28bcfd9e261688f84d914aaa5fdb87223c422fdf6f81b6049e6819991bca"
+    },
+    {
+      "path": "frontend/src/components/matte-repair-drawer.tsx",
+      "bytes": 31952,
+      "sha256": "cf5963645675ba9992a55993b917106d47fd682c1411dfb8182bcaf7f9062d21"
+    },
+    {
+      "path": "frontend/src/components/person-position-preview.tsx",
+      "bytes": 8046,
+      "sha256": "3fc90fa003863ba04d5c86d58ca65a29aae1602de70df0baddde132c27eb13f8"
+    },
+    {
+      "path": "frontend/src/components/production-ui.tsx",
+      "bytes": 11999,
+      "sha256": "c3bc1797ec26c6ccd88f0e061f756c878c98887d5b0745bf93e13e7bd0bf7113"
+    },
+    {
+      "path": "frontend/src/components/providers.tsx",
+      "bytes": 1151,
+      "sha256": "0b5182abe402f478f35d8741f8119f9e3b6d55542be8f89170bc5ecd0be470cf"
+    },
+    {
+      "path": "frontend/src/components/publishing-control.tsx",
+      "bytes": 36341,
+      "sha256": "53c49837f1c3eada241ad51f78c0525376fca3afcc1fb8876ff96e1df685d6f9"
+    },
+    {
+      "path": "frontend/src/components/publishing-submit-control.tsx",
+      "bytes": 9333,
+      "sha256": "6dd924415791eb288f821e68671fb5d04db8d873d975b052c91ba2a7eb6f49ed"
+    },
+    {
+      "path": "frontend/src/components/real-workbench.tsx",
+      "bytes": 43500,
+      "sha256": "f9a32f6b989c0cd6bb5b9e6d49da6c4bc3d60f0efff4c0d41d584046cd17d046"
+    },
+    {
+      "path": "frontend/src/components/transform-controls.tsx",
+      "bytes": 6494,
+      "sha256": "dc1fdb87c2cb782852c629dcf0188e6f1519100117b0c468b03b8a3fd0d55882"
+    },
+    {
+      "path": "frontend/src/components/ui/badge.tsx",
+      "bytes": 1915,
+      "sha256": "d9fb280e266119c4b62a4c518e63152de27b094c68d3e5f8929d05bfb0c1bc6c"
+    },
+    {
+      "path": "frontend/src/components/ui/button.tsx",
+      "bytes": 3230,
+      "sha256": "313353436d0fcc8e44ab470adb614b9fd013d28626f624328ea0d66d41a6c81b"
+    },
+    {
+      "path": "frontend/src/components/ui/dialog.tsx",
+      "bytes": 4066,
+      "sha256": "7e96b921d921ee9fb7c53e9372b17e775d087be9788ce1d51cbcdbab2b0d4ba5"
+    },
+    {
+      "path": "frontend/src/components/ui/input.tsx",
+      "bytes": 1030,
+      "sha256": "dab990dfefa0ba78854ab6602ad074270dba9d7d1262184d9bfbb62bd990903b"
+    },
+    {
+      "path": "frontend/src/components/ui/progress.tsx",
+      "bytes": 1730,
+      "sha256": "2c104695a495968e9ee426039e291abc4fb2ff32f36b5faa4e8b450c2a4cc14c"
+    },
+    {
+      "path": "frontend/src/components/ui/select.tsx",
+      "bytes": 6645,
+      "sha256": "4ba225fb838887a2493a8908774f1294ffbc2030af1e372425c6de76f598f0eb"
+    },
+    {
+      "path": "frontend/src/components/ui/separator.tsx",
+      "bytes": 535,
+      "sha256": "9a80ff8c110e0c55489509f4f82ebcc929c0174b59544047147b7134f86a54e7"
+    },
+    {
+      "path": "frontend/src/components/ui/skeleton.tsx",
+      "bytes": 266,
+      "sha256": "4c2af7fa9c645358a0fb188779deab6f0b981733b62befc25e18aaebea1350dc"
+    },
+    {
+      "path": "frontend/src/components/ui/switch.tsx",
+      "bytes": 1801,
+      "sha256": "d232e2ffcfa122c59099872bcb8395eaad36d42fa9d2e0e40382ad19994065e2"
+    },
+    {
+      "path": "frontend/src/components/ui/table.tsx",
+      "bytes": 2392,
+      "sha256": "749b0501e97591f8d7c9ef81366d636e4b47857a15a28e6cf3b87841232e74bf"
+    },
+    {
+      "path": "frontend/src/components/ui/tabs.tsx",
+      "bytes": 3487,
+      "sha256": "958b817b256cffae986d046168b70dd0153d542b4c521ee8bbdda349010011ef"
+    },
+    {
+      "path": "frontend/src/components/ui/textarea.tsx",
+      "bytes": 832,
+      "sha256": "82601c91ffc6c727d924162c78d7cb853114bcced4e2eb922a68ca12d4239c0f"
+    },
+    {
+      "path": "frontend/src/lib/api.ts",
+      "bytes": 11773,
+      "sha256": "0e7c1903fa2d8622bf5d991f47fcbedfeb4f9b7002260e2bd3d005520ba16ae9"
+    },
+    {
+      "path": "frontend/src/lib/types.ts",
+      "bytes": 9494,
+      "sha256": "e803bd48a8047f941ca07363e4bc41c2c2605b998a593aa5b89d868865367325"
+    },
+    {
+      "path": "frontend/src/lib/utils.ts",
+      "bytes": 24,
+      "sha256": "14300d758170c270c75b057f38fedb3793a5920ea872f0477e29fb131185e8a7"
+    },
+    {
+      "path": "frontend/tests/api-endpoints.test.cjs",
+      "bytes": 1939,
+      "sha256": "6bfec9fafe69a64f0d60994d738b0cabfdd08dc073421a0f9a7136f479e9f39f"
+    },
+    {
+      "path": "frontend/tests/asset-family-deletion.test.cjs",
+      "bytes": 16788,
+      "sha256": "9a40739b4a0e2584612fe95691559d06459319a5d42bfb99a59d928aaf22b991"
+    },
+    {
+      "path": "frontend/tests/collector-board.test.cjs",
+      "bytes": 2560,
+      "sha256": "5da04dff4dad7a4394cf753a23575d37851fbcc39dad148293e6d25c4f5decb7"
+    },
+    {
+      "path": "frontend/tests/collector-identity.test.cjs",
+      "bytes": 9057,
+      "sha256": "d6a7c6cba689b17bc19801e3487601efc09890671bdf8d4f59139c4d48987f04"
+    },
+    {
+      "path": "frontend/tests/collector-queue-control.test.mjs",
+      "bytes": 3136,
+      "sha256": "fa9e7336f3f015c366f1dde6871c49a85c69b2ea1eb5c0193f5dc1721b29cc62"
+    },
+    {
+      "path": "frontend/tests/collector-unattended.test.cjs",
+      "bytes": 1506,
+      "sha256": "0b5ce0246a9e45c0734f905544ae2fe52600b099e0f9cc395533d66808eab303"
+    },
+    {
+      "path": "frontend/tests/cutout-checkpoint.test.mjs",
+      "bytes": 1358,
+      "sha256": "a1102d2999629082a34e3e51964693f9171c03e3091a1cc0f6f7f66c9407be77"
+    },
+    {
+      "path": "frontend/tests/description-reuse.test.cjs",
+      "bytes": 6321,
+      "sha256": "0153cf31f7c03387539ccf820e710e3dc7a5e04e0038f0c235bf6331bae1906d"
+    },
+    {
+      "path": "frontend/tests/manual-compose.test.cjs",
+      "bytes": 26248,
+      "sha256": "b59cc4758ec180220ba6ffbbdbad1c7141bb2c16ce6cc1d7c4a9b7a207497c73"
+    },
+    {
+      "path": "frontend/tests/manual-review-routing.test.cjs",
+      "bytes": 14108,
+      "sha256": "0f57ed62179baa87ac5048a55419cffd456b18fd36ab510530bfd4ac67219e8d"
+    },
+    {
+      "path": "frontend/tests/production-resume-receipt.test.mjs",
+      "bytes": 3367,
+      "sha256": "11f3e7f729004e174727b705c8cf53474c9c052be9a42b7104732217a219c31c"
+    },
+    {
+      "path": "frontend/tests/publishing-preflight.test.cjs",
+      "bytes": 11262,
+      "sha256": "fecaf69289333b00cdc24d7439055987bca40bbf5804ed76726b5f8a9114ed36"
+    },
+    {
+      "path": "frontend/tsconfig.json",
+      "bytes": 864,
+      "sha256": "c83717a1f88b4b42b3e8797b4e4a2c10f9479de03d1e7c2f2cc02c84c7e5791f"
+    },
+    {
+      "path": "scripts/factory_launcher.py",
+      "bytes": 29297,
+      "sha256": "5600edcce613f517af77553e5e101912b797d74fe22aee5c80daee92c3cf4604"
+    },
+    {
+      "path": "scripts/init_factory.py",
+      "bytes": 7720,
+      "sha256": "2fc38f20969c4cbbf5f4fa06a49e894ba637f115062df7d14303ebb4bd2bf4ae"
+    },
+    {
+      "path": "scripts/migration_data.py",
+      "bytes": 33160,
+      "sha256": "e22ace1eb154cb6321e26d0739e609e567fddec1250336b15c721687a7455082"
+    },
+    {
+      "path": "scripts/migration_path_map.example.json",
+      "bytes": 534,
+      "sha256": "1038477a285ab54ff17005495c7f5106e14ff2e9eee424e822deedf1b17f886e"
+    },
+    {
+      "path": "scripts/start_factory_mac.command",
+      "bytes": 410,
+      "sha256": "5d85f6e4e16d011d6745f467ea4a1ea359d2cb54e2a19965afddc9e806833d6e"
+    },
+    {
+      "path": "scripts/stop_factory_mac.command",
+      "bytes": 372,
+      "sha256": "cd5d0a5eb314baa0022f45b84db152b089d187f3b7e7ed2044592e92d175acf1"
+    },
+    {
+      "path": "scripts/windows/check_factory_windows.ps1",
+      "bytes": 541,
+      "sha256": "b8d9819df1e27985117b0162f112a88d36f7205b73fa19e33b986c669d109dcb"
+    },
+    {
+      "path": "scripts/windows/configure_factory_windows.ps1",
+      "bytes": 1383,
+      "sha256": "26eb0c26f17b5636b072a5b9c49fe2362d054811b04e58ec51c827ba2974175a"
+    },
+    {
+      "path": "scripts/windows/register_factory_windows_startup.ps1",
+      "bytes": 1881,
+      "sha256": "ae4c26a634df08a15064011292b1a947a8845dca68c21bcf70187cda6610472e"
+    },
+    {
+      "path": "scripts/windows/start_factory_windows.bat",
+      "bytes": 286,
+      "sha256": "08b7281799d4963c697bdbbaa919dcd3850c8063b1ca0abdb2ed2314baab0b8b"
+    },
+    {
+      "path": "scripts/windows/start_factory_windows.ps1",
+      "bytes": 672,
+      "sha256": "dc77c65accfa1b72e7867278b6d3f4308b34e2649d298377664313b5bc4c23ba"
+    },
+    {
+      "path": "scripts/windows/stop_factory_windows.bat",
+      "bytes": 290,
+      "sha256": "57f81279ba3cc258272449824537c07720b5e0feb4eb8ff98c8e1ad29af501ed"
+    },
+    {
+      "path": "scripts/windows/stop_factory_windows.ps1",
+      "bytes": 546,
+      "sha256": "baee6e523d1833c74d2676c4b80056bc81cd5b92d0491bc6ad18ee73355e6090"
+    },
+    {
+      "path": "scripts/windows/tailscale_factory_windows.ps1",
+      "bytes": 5851,
+      "sha256": "bacaacfc756609c7521a0364f02b3b764bde93eee9575659eae44fa5ecd86990"
+    },
+    {
+      "path": "workflows/compose_person_v1.api.json",
+      "bytes": 1199,
+      "sha256": "3d220f72479fb9b6a4763b3be88c8687321de58a0b50529a2d43f56f30780dcc"
+    },
+    {
+      "path": "workflows/compose_person_v2.api.json",
+      "bytes": 1318,
+      "sha256": "89db4a6ae120838b9d7580a3bde43754545c80782b352c4f1d87dc88b2548e4b"
+    },
+    {
+      "path": "workflows/cutout_alpha_diagnostic_v1.api.json",
+      "bytes": 2165,
+      "sha256": "d7ffb5a5c8670b3c86509da6f270911ecb16a3ed6ebf3c1a9892e319ff1c98b1"
+    },
+    {
+      "path": "workflows/cutout_rgb_alpha_v1.api.json",
+      "bytes": 1708,
+      "sha256": "2cb863154d4abbf26facbf21d46f90b723ef10277548883f821ad371369eee14"
+    },
+    {
+      "path": "workflows/cutout_rgb_alpha_v2.api.json",
+      "bytes": 1530,
+      "sha256": "ef5021afed11ba1495a501425593dabd94f5834ce25c4508e98b2b09b3a80368"
+    },
+    {
+      "path": "README.md",
+      "bytes": 4950,
+      "sha256": "05a8b4f70c7a93a1e57489d39f7a40d71b240869872439c21e5279c39d34fa43",
+      "source": "committed development guide; local deletion left unchanged"
+    }
+  ],
+  "excluded": [
+    {
+      "path": "AI_接口检测教程.md",
+      "reason": "historical report or auxiliary file"
+    },
+    {
+      "path": "AI接口与未闭环需求验收报告.md",
+      "reason": "historical report or auxiliary file"
+    },
+    {
+      "path": "ComfyUI_Phase2_Step4_Codex_Instructions_20261007.txt",
+      "reason": "historical report or auxiliary file"
+    },
+    {
+      "path": "FULL_PIPELINE_INTEGRATION.md",
+      "reason": "historical report or auxiliary file"
+    },
+    {
+      "path": "INTEGRATION_AUDIT.md",
+      "reason": "historical report or auxiliary file"
+    },
+    {
+      "path": "PHASE2_STEP4_RESULTS.md",
+      "reason": "historical report or auxiliary file"
+    },
+    {
+      "path": "README.md",
+      "reason": "working-tree deletion or missing file"
+    },
+    {
+      "path": "REAL_COLLECTOR_INTEGRATION.md",
+      "reason": "historical report or auxiliary file"
+    },
+    {
+      "path": "REAL_FEATURE_MATRIX.md",
+      "reason": "historical report or auxiliary file"
+    },
+    {
+      "path": "RUNTIME_RECOVERY_20261008.md",
+      "reason": "historical report or auxiliary file"
+    },
+    {
+      "path": "docs/FINAL_GAP_MATRIX.md",
+      "reason": "historical report or auxiliary file"
+    },
+    {
+      "path": "docs/FINAL_REQUIREMENT_MATRIX.md",
+      "reason": "historical report or auxiliary file"
+    },
+    {
+      "path": "docs/PUBLISH_REAL_VALIDATION_20261008.md",
+      "reason": "historical report or auxiliary file"
+    },
+    {
+      "path": "docs/RECOVERY_CHECKPOINT.md",
+      "reason": "historical report or auxiliary file"
+    },
+    {
+      "path": "docs/acceptance/account-detail-persisted.png",
+      "reason": "historical report or auxiliary file"
+    },
+    {
+      "path": "docs/acceptance/asset-family-delete-formal-proof.md",
+      "reason": "historical report or auxiliary file"
+    },
+    {
+      "path": "docs/acceptance/asset-family-formal-after-proof-20261011.json",
+      "reason": "historical report or auxiliary file"
+    },
+    {
+      "path": "docs/acceptance/asset-family-formal-delete-refreshed-20261011.png",
+      "reason": "historical report or auxiliary file"
+    },
+    {
+      "path": "docs/acceptance/asset-family-formal-delete-success-20261011.png",
+      "reason": "historical report or auxiliary file"
+    },
+    {
+      "path": "docs/acceptance/asset-family-formal-final-plan-20261011.json",
+      "reason": "historical report or auxiliary file"
+    },
+    {
+      "path": "docs/acceptance/asset-family-isolated-external-after-20261011.json",
+      "reason": "historical report or auxiliary file"
+    },
+    {
+      "path": "docs/acceptance/asset-family-isolated-external-before-20261011.json",
+      "reason": "historical report or auxiliary file"
+    },
+    {
+      "path": "docs/acceptance/asset-family-isolated-external-plan-20261011.json",
+      "reason": "historical report or auxiliary file"
+    },
+    {
+      "path": "docs/acceptance/asset-family-isolated-internal-after-20261011.json",
+      "reason": "historical report or auxiliary file"
+    },
+    {
+      "path": "docs/acceptance/asset-family-isolated-internal-before-20261011.json",
+      "reason": "historical report or auxiliary file"
+    },
+    {
+      "path": "docs/acceptance/asset-family-isolated-internal-plan-20261011.json",
+      "reason": "historical report or auxiliary file"
+    },
+    {
+      "path": "docs/acceptance/asset-family-tests-20261011.log",
+      "reason": "historical report or auxiliary file"
+    },
+    {
+      "path": "docs/acceptance/asset-family-tests-clear-space-20261011.log",
+      "reason": "historical report or auxiliary file"
+    },
+    {
+      "path": "docs/acceptance/asset-family-tests-diskfull-20261011.log",
+      "reason": "historical report or auxiliary file"
+    },
+    {
+      "path": "docs/acceptance/asset-family-tests-orphan-20261011.log",
+      "reason": "historical report or auxiliary file"
+    },
+    {
+      "path": "docs/acceptance/asset-family-tests-recovered-20261011.log",
+      "reason": "historical report or auxiliary file"
+    },
+    {
+      "path": "docs/acceptance/asset-original-formal-api-before-20261011.json",
+      "reason": "historical report or auxiliary file"
+    },
+    {
+      "path": "docs/acceptance/asset-original-local-new-plan-20261011.json",
+      "reason": "historical report or auxiliary file"
+    },
+    {
+      "path": "docs/acceptance/asset-original-orphan-new-plan-20261011.json",
+      "reason": "historical report or auxiliary file"
+    },
+    {
+      "path": "docs/acceptance/asset-original-video-deletion-root-cause.md",
+      "reason": "historical report or auxiliary file"
+    },
+    {
+      "path": "docs/acceptance/backend-full-20261011.log",
+      "reason": "historical report or auxiliary file"
+    },
+    {
+      "path": "docs/acceptance/backend-full-before-final-test-alignment-20261011.log",
+      "reason": "historical report or auxiliary file"
+    },
+    {
+      "path": "docs/acceptance/backend-pip-check-20261011.log",
+      "reason": "historical report or auxiliary file"
+    },
+    {
+      "path": "docs/acceptance/backend-unattended-aligned-final-20261011.log",
+      "reason": "historical report or auxiliary file"
+    },
+    {
+      "path": "docs/acceptance/bg01-composition-formal-20261011.png",
+      "reason": "historical report or auxiliary file"
+    },
+    {
+      "path": "docs/acceptance/bg01-recovery-real-proof-20261011.json",
+      "reason": "historical report or auxiliary file"
+    },
+    {
+      "path": "docs/acceptance/closure-20261009-runtime.md",
+      "reason": "historical report or auxiliary file"
+    },
+    {
+      "path": "docs/acceptance/closure-ai-20261009-evidence.md",
+      "reason": "historical report or auxiliary file"
+    },
+    {
+      "path": "docs/acceptance/closure-backend-deployed-tests.log",
+      "reason": "historical report or auxiliary file"
+    },
+    {
+      "path": "docs/acceptance/closure-backend-final-tests.log",
+      "reason": "historical report or auxiliary file"
+    },
+    {
+      "path": "docs/acceptance/closure-backend-tests.log",
+      "reason": "historical report or auxiliary file"
+    },
+    {
+      "path": "docs/acceptance/closure-bg11-existing-image.png",
+      "reason": "historical report or auxiliary file"
+    },
+    {
+      "path": "docs/acceptance/closure-collector-paid-receipts-tests.log",
+      "reason": "historical report or auxiliary file"
+    },
+    {
+      "path": "docs/acceptance/closure-compose-picker-saved.png",
+      "reason": "historical report or auxiliary file"
+    },
+    {
+      "path": "docs/acceptance/closure-compose-pickers-current.png",
+      "reason": "historical report or auxiliary file"
+    },
+    {
+      "path": "docs/acceptance/closure-compose-selection-reply.json",
+      "reason": "historical report or auxiliary file"
+    },
+    {
+      "path": "docs/acceptance/closure-family-after-complete-v2.json",
+      "reason": "historical report or auxiliary file"
+    },
+    {
+      "path": "docs/acceptance/closure-family-after.json",
+      "reason": "historical report or auxiliary file"
+    },
+    {
+      "path": "docs/acceptance/closure-family-before-complete-v2.json",
+      "reason": "historical report or auxiliary file"
+    },
+    {
+      "path": "docs/acceptance/closure-family-before.json",
+      "reason": "historical report or auxiliary file"
+    },
+    {
+      "path": "docs/acceptance/closure-family-browser-after.png",
+      "reason": "historical report or auxiliary file"
+    },
+    {
+      "path": "docs/acceptance/closure-family-browser-before.png",
+      "reason": "historical report or auxiliary file"
+    },
+    {
+      "path": "docs/acceptance/closure-family-browser-refresh.png",
+      "reason": "historical report or auxiliary file"
+    },
+    {
+      "path": "docs/acceptance/closure-family-complete-v2-after-refresh.png",
+      "reason": "historical report or auxiliary file"
+    },
+    {
+      "path": "docs/acceptance/closure-family-complete-v2-before.png",
+      "reason": "historical report or auxiliary file"
+    },
+    {
+      "path": "docs/acceptance/closure-family-fixture-complete-v2.log",
+      "reason": "historical report or auxiliary file"
+    },
+    {
+      "path": "docs/acceptance/closure-family-fixture.log",
+      "reason": "historical report or auxiliary file"
+    },
+    {
+      "path": "docs/acceptance/closure-family-lock-tests.log",
+      "reason": "historical report or auxiliary file"
+    },
+    {
+      "path": "docs/acceptance/closure-family-performance-tests.log",
+      "reason": "historical report or auxiliary file"
+    },
+    {
+      "path": "docs/acceptance/closure-family-plan-complete-v2.json",
+      "reason": "historical report or auxiliary file"
+    },
+    {
+      "path": "docs/acceptance/closure-family-plan.json",
+      "reason": "historical report or auxiliary file"
+    },
+    {
+      "path": "docs/acceptance/closure-family-verify-complete-v2.log",
+      "reason": "historical report or auxiliary file"
+    },
+    {
+      "path": "docs/acceptance/closure-family-verify.log",
+      "reason": "historical report or auxiliary file"
+    },
+    {
+      "path": "docs/acceptance/closure-final-targeted-tests.log",
+      "reason": "historical report or auxiliary file"
+    },
+    {
+      "path": "docs/acceptance/closure-formal-backend.log",
+      "reason": "historical report or auxiliary file"
+    },
+    {
+      "path": "docs/acceptance/closure-formal-family-final-plan.json",
+      "reason": "historical report or auxiliary file"
+    },
+    {
+      "path": "docs/acceptance/closure-formal-family-linked.png",
+      "reason": "historical report or auxiliary file"
+    },
+    {
+      "path": "docs/acceptance/closure-formal-family-plan.json",
+      "reason": "historical report or auxiliary file"
+    },
+    {
+      "path": "docs/acceptance/closure-formal-family-ready-dialog.png",
+      "reason": "historical report or auxiliary file"
+    },
+    {
+      "path": "docs/acceptance/closure-formal-family-ready-plan.json",
+      "reason": "historical report or auxiliary file"
+    },
+    {
+      "path": "docs/acceptance/closure-formal-v12-approved.png",
+      "reason": "historical report or auxiliary file"
+    },
+    {
+      "path": "docs/acceptance/closure-formal-v12-composite.png",
+      "reason": "historical report or auxiliary file"
+    },
+    {
+      "path": "docs/acceptance/closure-frontend-final-check.log",
+      "reason": "historical report or auxiliary file"
+    },
+    {
+      "path": "docs/acceptance/closure-frontend-final-tests.log",
+      "reason": "historical report or auxiliary file"
+    },
+    {
+      "path": "docs/acceptance/closure-isolated-bulk-delete.png",
+      "reason": "historical report or auxiliary file"
+    },
+    {
+      "path": "docs/acceptance/closure-isolated-single-delete.png",
+      "reason": "historical report or auxiliary file"
+    },
+    {
+      "path": "docs/acceptance/closure-original-batch-resumed.png",
+      "reason": "historical report or auxiliary file"
+    },
+    {
+      "path": "docs/acceptance/closure-rpa-download-tests.log",
+      "reason": "historical report or auxiliary file"
+    },
+    {
+      "path": "docs/acceptance/closure-runtime-readback.json",
+      "reason": "historical report or auxiliary file"
+    },
+    {
+      "path": "docs/acceptance/closure-runtime-readback.log",
+      "reason": "historical report or auxiliary file"
+    },
+    {
+      "path": "docs/acceptance/closure-safe-deploy-pause.json",
+      "reason": "historical report or auxiliary file"
+    },
+    {
+      "path": "docs/acceptance/closure-test-backend.log",
+      "reason": "historical report or auxiliary file"
+    },
+    {
+      "path": "docs/acceptance/collection-80-review-root-cause.md",
+      "reason": "historical report or auxiliary file"
+    },
+    {
+      "path": "docs/acceptance/collection-dedupe-after.json",
+      "reason": "historical report or auxiliary file"
+    },
+    {
+      "path": "docs/acceptance/collection-dedupe-and-project-closure-20261011.md",
+      "reason": "historical report or auxiliary file"
+    },
+    {
+      "path": "docs/acceptance/collection-dedupe-artifacts.sha256",
+      "reason": "historical report or auxiliary file"
+    },
+    {
+      "path": "docs/acceptance/collection-dedupe-backend-final.log",
+      "reason": "historical report or auxiliary file"
+    },
+    {
+      "path": "docs/acceptance/collection-dedupe-backend-initial-failure.log",
+      "reason": "historical report or auxiliary file"
+    },
+    {
+      "path": "docs/acceptance/collection-dedupe-before-initial.json",
+      "reason": "historical report or auxiliary file"
+    },
+    {
+      "path": "docs/acceptance/collection-dedupe-before.json",
+      "reason": "historical report or auxiliary file"
+    },
+    {
+      "path": "docs/acceptance/collection-dedupe-browser-formal-20261011.png",
+      "reason": "historical report or auxiliary file"
+    },
+    {
+      "path": "docs/acceptance/collection-dedupe-browser-formal-20261011.txt",
+      "reason": "historical report or auxiliary file"
+    },
+    {
+      "path": "docs/acceptance/collection-dedupe-browser-formal-api-20261011.png",
+      "reason": "historical report or auxiliary file"
+    },
+    {
+      "path": "docs/acceptance/collection-dedupe-browser-formal-api-20261011.txt",
+      "reason": "historical report or auxiliary file"
+    },
+    {
+      "path": "docs/acceptance/collection-dedupe-browser-formal-api-full-20261011.png",
+      "reason": "historical report or auxiliary file"
+    },
+    {
+      "path": "docs/acceptance/collection-dedupe-browser-readback-20261011.json",
+      "reason": "historical report or auxiliary file"
+    },
+    {
+      "path": "docs/acceptance/collection-dedupe-deploy.json",
+      "reason": "historical report or auxiliary file"
+    },
+    {
+      "path": "docs/acceptance/collection-dedupe-deployed-backend-20261011.log",
+      "reason": "historical report or auxiliary file"
+    },
+    {
+      "path": "docs/acceptance/collection-dedupe-deployed-backend-final-20261011.log",
+      "reason": "historical report or auxiliary file"
+    },
+    {
+      "path": "docs/acceptance/collection-dedupe-final-concurrent-ui-change-20261011.json",
+      "reason": "historical report or auxiliary file"
+    },
+    {
+      "path": "docs/acceptance/collection-dedupe-final-readback-20261011.json",
+      "reason": "historical report or auxiliary file"
+    },
+    {
+      "path": "docs/acceptance/collection-dedupe-mapping-initial.csv",
+      "reason": "historical report or auxiliary file"
+    },
+    {
+      "path": "docs/acceptance/collection-dedupe-mapping.csv",
+      "reason": "historical report or auxiliary file"
+    },
+    {
+      "path": "docs/acceptance/collection-dedupe-plan-initial.json",
+      "reason": "historical report or auxiliary file"
+    },
+    {
+      "path": "docs/acceptance/collection-dedupe-plan.json",
+      "reason": "historical report or auxiliary file"
+    },
+    {
+      "path": "docs/acceptance/collection-dedupe-post-clean-command-error.log",
+      "reason": "historical report or auxiliary file"
+    },
+    {
+      "path": "docs/acceptance/collection-dedupe-post-clean-readback-20261011.json",
+      "reason": "historical report or auxiliary file"
+    },
+    {
+      "path": "docs/acceptance/collection-dedupe-post-clean-regression.log",
+      "reason": "historical report or auxiliary file"
+    },
+    {
+      "path": "docs/acceptance/collection-dedupe-real-api-20261011.json",
+      "reason": "historical report or auxiliary file"
+    },
+    {
+      "path": "docs/acceptance/collection-dedupe-recovery-checkpoint.md",
+      "reason": "historical report or auxiliary file"
+    },
+    {
+      "path": "docs/acceptance/collection-dedupe-sam3-cache-contract.log",
+      "reason": "historical report or auxiliary file"
+    },
+    {
+      "path": "docs/acceptance/collection-dedupe-service-final.log",
+      "reason": "historical report or auxiliary file"
+    },
+    {
+      "path": "docs/acceptance/collection-dedupe-source-review.log",
+      "reason": "historical report or auxiliary file"
+    },
+    {
+      "path": "docs/acceptance/collection-dedupe-ui-all.log",
+      "reason": "historical report or auxiliary file"
+    },
+    {
+      "path": "docs/acceptance/collection-dedupe-ui-check.log",
+      "reason": "historical report or auxiliary file"
+    },
+    {
+      "path": "docs/acceptance/collection-dedupe-ui-targeted-final.log",
+      "reason": "historical report or auxiliary file"
+    },
+    {
+      "path": "docs/acceptance/collector-budget-wait.png",
+      "reason": "historical report or auxiliary file"
+    },
+    {
+      "path": "docs/acceptance/collector-excel-formal.png",
+      "reason": "historical report or auxiliary file"
+    },
+    {
+      "path": "docs/acceptance/collector-fresh-semantic-wait.png",
+      "reason": "historical report or auxiliary file"
+    },
+    {
+      "path": "docs/acceptance/collector-triage-formal-20261011.png",
+      "reason": "historical report or auxiliary file"
+    },
+    {
+      "path": "docs/acceptance/collector-triage-formal-proof-20261011.json",
+      "reason": "historical report or auxiliary file"
+    },
+    {
+      "path": "docs/acceptance/collector-unattended-policy-refresh-20261011.png",
+      "reason": "historical report or auxiliary file"
+    },
+    {
+      "path": "docs/acceptance/collector-unattended-tests-20261011.log",
+      "reason": "historical report or auxiliary file"
+    },
+    {
+      "path": "docs/acceptance/delivery-20261009-asset-migration-rehearsal.md",
+      "reason": "historical report or auxiliary file"
+    },
+    {
+      "path": "docs/acceptance/delivery-20261009-assets-bulk-delete.png",
+      "reason": "historical report or auxiliary file"
+    },
+    {
+      "path": "docs/acceptance/delivery-20261009-assets-compat-tests.log",
+      "reason": "historical report or auxiliary file"
+    },
+    {
+      "path": "docs/acceptance/delivery-20261009-assets-delete-failure.png",
+      "reason": "historical report or auxiliary file"
+    },
+    {
+      "path": "docs/acceptance/delivery-20261009-assets-empty-after-refresh.png",
+      "reason": "historical report or auxiliary file"
+    },
+    {
+      "path": "docs/acceptance/delivery-20261009-assets-family-frontend-check.log",
+      "reason": "historical report or auxiliary file"
+    },
+    {
+      "path": "docs/acceptance/delivery-20261009-assets-family-frontend-unit.log",
+      "reason": "historical report or auxiliary file"
+    },
+    {
+      "path": "docs/acceptance/delivery-20261009-assets-illegal-path.png",
+      "reason": "historical report or auxiliary file"
+    },
+    {
+      "path": "docs/acceptance/delivery-20261009-assets-shared-a-deleted.png",
+      "reason": "historical report or auxiliary file"
+    },
+    {
+      "path": "docs/acceptance/delivery-20261009-assets-shared-after.png",
+      "reason": "historical report or auxiliary file"
+    },
+    {
+      "path": "docs/acceptance/delivery-20261009-assets-shared-b-deleted.png",
+      "reason": "historical report or auxiliary file"
+    },
+    {
+      "path": "docs/acceptance/delivery-20261009-assets-shared-before.png",
+      "reason": "historical report or auxiliary file"
+    },
+    {
+      "path": "docs/acceptance/delivery-20261009-assets-shared-empty.png",
+      "reason": "historical report or auxiliary file"
+    },
+    {
+      "path": "docs/acceptance/delivery-20261009-assets-shared-plan.png",
+      "reason": "historical report or auxiliary file"
+    },
+    {
+      "path": "docs/acceptance/delivery-20261009-assets-single-delete.png",
+      "reason": "historical report or auxiliary file"
+    },
+    {
+      "path": "docs/acceptance/delivery-20261009-assets.md",
+      "reason": "historical report or auxiliary file"
+    },
+    {
+      "path": "docs/acceptance/delivery-20261009-backend-attachment-final.log",
+      "reason": "historical report or auxiliary file"
+    },
+    {
+      "path": "docs/acceptance/delivery-20261009-backend-deployed.log",
+      "reason": "historical report or auxiliary file"
+    },
+    {
+      "path": "docs/acceptance/delivery-20261009-backend-final-current.log",
+      "reason": "historical report or auxiliary file"
+    },
+    {
+      "path": "docs/acceptance/delivery-20261009-backend-final.log",
+      "reason": "historical report or auxiliary file"
+    },
+    {
+      "path": "docs/acceptance/delivery-20261009-backend-full.log",
+      "reason": "historical report or auxiliary file"
+    },
+    {
+      "path": "docs/acceptance/delivery-20261009-backend-post-readback.log",
+      "reason": "historical report or auxiliary file"
+    },
+    {
+      "path": "docs/acceptance/delivery-20261009-backend-verified-final.log",
+      "reason": "historical report or auxiliary file"
+    },
+    {
+      "path": "docs/acceptance/delivery-20261009-background-upload-cleanup-tests.log",
+      "reason": "historical report or auxiliary file"
+    },
+    {
+      "path": "docs/acceptance/delivery-20261009-bg11-existing-draft.png",
+      "reason": "historical report or auxiliary file"
+    },
+    {
+      "path": "docs/acceptance/delivery-20261009-bg11-shadowbot-timeout.png",
+      "reason": "historical report or auxiliary file"
+    },
+    {
+      "path": "docs/acceptance/delivery-20261009-compose-review-reuse-tests.log",
+      "reason": "historical report or auxiliary file"
+    },
+    {
+      "path": "docs/acceptance/delivery-20261009-current-attached-sku.png",
+      "reason": "historical report or auxiliary file"
+    },
+    {
+      "path": "docs/acceptance/delivery-20261009-description-reuse-frontend-unit.log",
+      "reason": "historical report or auxiliary file"
+    },
+    {
+      "path": "docs/acceptance/delivery-20261009-description-reuse-unit.log",
+      "reason": "historical report or auxiliary file"
+    },
+    {
+      "path": "docs/acceptance/delivery-20261009-description-review.png",
+      "reason": "historical report or auxiliary file"
+    },
+    {
+      "path": "docs/acceptance/delivery-20261009-factory-published.png",
+      "reason": "historical report or auxiliary file"
+    },
+    {
+      "path": "docs/acceptance/delivery-20261009-formal-backend.log",
+      "reason": "historical report or auxiliary file"
+    },
+    {
+      "path": "docs/acceptance/delivery-20261009-frontend-check.log",
+      "reason": "historical report or auxiliary file"
+    },
+    {
+      "path": "docs/acceptance/delivery-20261009-frontend-final.log",
+      "reason": "historical report or auxiliary file"
+    },
+    {
+      "path": "docs/acceptance/delivery-20261009-frontend-post-readback.log",
+      "reason": "historical report or auxiliary file"
+    },
+    {
+      "path": "docs/acceptance/delivery-20261009-frontend-publish-final.log",
+      "reason": "historical report or auxiliary file"
+    },
+    {
+      "path": "docs/acceptance/delivery-20261009-frontend-unit-final.log",
+      "reason": "historical report or auxiliary file"
+    },
+    {
+      "path": "docs/acceptance/delivery-20261009-hub-upload.png",
+      "reason": "historical report or auxiliary file"
+    },
+    {
+      "path": "docs/acceptance/delivery-20261009-manual-compose-frontend-tests.log",
+      "reason": "historical report or auxiliary file"
+    },
+    {
+      "path": "docs/acceptance/delivery-20261009-manual-compose-playing.png",
+      "reason": "historical report or auxiliary file"
+    },
+    {
+      "path": "docs/acceptance/delivery-20261009-manual-compose-tests.log",
+      "reason": "historical report or auxiliary file"
+    },
+    {
+      "path": "docs/acceptance/delivery-20261009-manual-compose.md",
+      "reason": "historical report or auxiliary file"
+    },
+    {
+      "path": "docs/acceptance/delivery-20261009-product-and-content-passed.png",
+      "reason": "historical report or auxiliary file"
+    },
+    {
+      "path": "docs/acceptance/delivery-20261009-product-attachment-frontend-unit.log",
+      "reason": "historical report or auxiliary file"
+    },
+    {
+      "path": "docs/acceptance/delivery-20261009-product-attachment-frontend.log",
+      "reason": "historical report or auxiliary file"
+    },
+    {
+      "path": "docs/acceptance/delivery-20261009-product-attachment-recovery-unit.log",
+      "reason": "historical report or auxiliary file"
+    },
+    {
+      "path": "docs/acceptance/delivery-20261009-product-id-conflict.png",
+      "reason": "historical report or auxiliary file"
+    },
+    {
+      "path": "docs/acceptance/delivery-20261009-public-post-metadata.png",
+      "reason": "historical report or auxiliary file"
+    },
+    {
+      "path": "docs/acceptance/delivery-20261009-public-post-playing.png",
+      "reason": "historical report or auxiliary file"
+    },
+    {
+      "path": "docs/acceptance/delivery-20261009-public-submission-policy-unit.log",
+      "reason": "historical report or auxiliary file"
+    },
+    {
+      "path": "docs/acceptance/delivery-20261009-public-submit-unit-contracts.log",
+      "reason": "historical report or auxiliary file"
+    },
+    {
+      "path": "docs/acceptance/delivery-20261009-publication-readback-unit.log",
+      "reason": "historical report or auxiliary file"
+    },
+    {
+      "path": "docs/acceptance/delivery-20261009-publish-submitted-review.png",
+      "reason": "historical report or auxiliary file"
+    },
+    {
+      "path": "docs/acceptance/delivery-20261009-publishing-gates.log",
+      "reason": "historical report or auxiliary file"
+    },
+    {
+      "path": "docs/acceptance/delivery-20261009-runtime.md",
+      "reason": "historical report or auxiliary file"
+    },
+    {
+      "path": "docs/acceptance/delivery-20261009-studio-post-metadata.png",
+      "reason": "historical report or auxiliary file"
+    },
+    {
+      "path": "docs/acceptance/delivery-20261009-studio-post-public.png",
+      "reason": "historical report or auxiliary file"
+    },
+    {
+      "path": "docs/acceptance/final-delivery-20261009.md",
+      "reason": "historical report or auxiliary file"
+    },
+    {
+      "path": "docs/acceptance/final-delivery-assets-tests-20261009.log",
+      "reason": "historical report or auxiliary file"
+    },
+    {
+      "path": "docs/acceptance/product-image-persisted.png",
+      "reason": "historical report or auxiliary file"
+    },
+    {
+      "path": "docs/acceptance/project-cleanup-actions.json",
+      "reason": "historical report or auxiliary file"
+    },
+    {
+      "path": "docs/acceptance/project-cleanup-candidates.csv",
+      "reason": "historical report or auxiliary file"
+    },
+    {
+      "path": "docs/acceptance/project-cleanup-full-inventory.json.gz",
+      "reason": "historical report or auxiliary file"
+    },
+    {
+      "path": "docs/acceptance/project-cleanup-inventory.md",
+      "reason": "historical report or auxiliary file"
+    },
+    {
+      "path": "docs/acceptance/project-cleanup-structure-summary.json",
+      "reason": "historical report or auxiliary file"
+    },
+    {
+      "path": "docs/acceptance/recovery-20261009-alpha-after-overlay.png",
+      "reason": "historical report or auxiliary file"
+    },
+    {
+      "path": "docs/acceptance/recovery-20261009-alpha1s.png",
+      "reason": "historical report or auxiliary file"
+    },
+    {
+      "path": "docs/acceptance/recovery-20261009-alpha30s.png",
+      "reason": "historical report or auxiliary file"
+    },
+    {
+      "path": "docs/acceptance/recovery-20261009-alpha32s.png",
+      "reason": "historical report or auxiliary file"
+    },
+    {
+      "path": "docs/acceptance/recovery-20261009-backend-final.log",
+      "reason": "historical report or auxiliary file"
+    },
+    {
+      "path": "docs/acceptance/recovery-20261009-backend-release.log",
+      "reason": "historical report or auxiliary file"
+    },
+    {
+      "path": "docs/acceptance/recovery-20261009-backend-response-final.log",
+      "reason": "historical report or auxiliary file"
+    },
+    {
+      "path": "docs/acceptance/recovery-20261009-backend-runtime-fixed.log",
+      "reason": "historical report or auxiliary file"
+    },
+    {
+      "path": "docs/acceptance/recovery-20261009-backend-tests-verified.log",
+      "reason": "historical report or auxiliary file"
+    },
+    {
+      "path": "docs/acceptance/recovery-20261009-backend-tests.log",
+      "reason": "historical report or auxiliary file"
+    },
+    {
+      "path": "docs/acceptance/recovery-20261009-browser-preparation-tests.log",
+      "reason": "historical report or auxiliary file"
+    },
+    {
+      "path": "docs/acceptance/recovery-20261009-checkpoint-frontend-tests-fixed.log",
+      "reason": "historical report or auxiliary file"
+    },
+    {
+      "path": "docs/acceptance/recovery-20261009-checkpoint-frontend-tests.log",
+      "reason": "historical report or auxiliary file"
+    },
+    {
+      "path": "docs/acceptance/recovery-20261009-checkpoint-frontend-typecheck.log",
+      "reason": "historical report or auxiliary file"
+    },
+    {
+      "path": "docs/acceptance/recovery-20261009-comfy-runtime.log",
+      "reason": "historical report or auxiliary file"
+    },
+    {
+      "path": "docs/acceptance/recovery-20261009-compose-refusal.png",
+      "reason": "historical report or auxiliary file"
+    },
+    {
+      "path": "docs/acceptance/recovery-20261009-cutout-a-pinned.png",
+      "reason": "historical report or auxiliary file"
+    },
+    {
+      "path": "docs/acceptance/recovery-20261009-cutout-b-pinned.png",
+      "reason": "historical report or auxiliary file"
+    },
+    {
+      "path": "docs/acceptance/recovery-20261009-cutout-checkpoint-hook-final.log",
+      "reason": "historical report or auxiliary file"
+    },
+    {
+      "path": "docs/acceptance/recovery-20261009-cutout-checkpoint-hook-tests.log",
+      "reason": "historical report or auxiliary file"
+    },
+    {
+      "path": "docs/acceptance/recovery-20261009-dashboard-running.png",
+      "reason": "historical report or auxiliary file"
+    },
+    {
+      "path": "docs/acceptance/recovery-20261009-description-review.png",
+      "reason": "historical report or auxiliary file"
+    },
+    {
+      "path": "docs/acceptance/recovery-20261009-environment-restore-target.log",
+      "reason": "historical report or auxiliary file"
+    },
+    {
+      "path": "docs/acceptance/recovery-20261009-finalization-baseline.log",
+      "reason": "historical report or auxiliary file"
+    },
+    {
+      "path": "docs/acceptance/recovery-20261009-finalization-target.log",
+      "reason": "historical report or auxiliary file"
+    },
+    {
+      "path": "docs/acceptance/recovery-20261009-finalization-verified.log",
+      "reason": "historical report or auxiliary file"
+    },
+    {
+      "path": "docs/acceptance/recovery-20261009-formal-frontend.log",
+      "reason": "historical report or auxiliary file"
+    },
+    {
+      "path": "docs/acceptance/recovery-20261009-formal-runtime.log",
+      "reason": "historical report or auxiliary file"
+    },
+    {
+      "path": "docs/acceptance/recovery-20261009-frame911.png",
+      "reason": "historical report or auxiliary file"
+    },
+    {
+      "path": "docs/acceptance/recovery-20261009-frontend-check-after-checkpoint.log",
+      "reason": "historical report or auxiliary file"
+    },
+    {
+      "path": "docs/acceptance/recovery-20261009-frontend-check-final.log",
+      "reason": "historical report or auxiliary file"
+    },
+    {
+      "path": "docs/acceptance/recovery-20261009-frontend-check.log",
+      "reason": "historical report or auxiliary file"
+    },
+    {
+      "path": "docs/acceptance/recovery-20261009-frontend-refusal-lint.log",
+      "reason": "historical report or auxiliary file"
+    },
+    {
+      "path": "docs/acceptance/recovery-20261009-frontend-refusal-tests.log",
+      "reason": "historical report or auxiliary file"
+    },
+    {
+      "path": "docs/acceptance/recovery-20261009-frontend-refusal-typecheck.log",
+      "reason": "historical report or auxiliary file"
+    },
+    {
+      "path": "docs/acceptance/recovery-20261009-frontend-tests-after-checkpoint.log",
+      "reason": "historical report or auxiliary file"
+    },
+    {
+      "path": "docs/acceptance/recovery-20261009-frontend-tests-fixed.log",
+      "reason": "historical report or auxiliary file"
+    },
+    {
+      "path": "docs/acceptance/recovery-20261009-frontend-tests.log",
+      "reason": "historical report or auxiliary file"
+    },
+    {
+      "path": "docs/acceptance/recovery-20261009-hub18-existing-draft.png",
+      "reason": "historical report or auxiliary file"
+    },
+    {
+      "path": "docs/acceptance/recovery-20261009-isolated-frontend.log",
+      "reason": "historical report or auxiliary file"
+    },
+    {
+      "path": "docs/acceptance/recovery-20261009-isolated-runtime.log",
+      "reason": "historical report or auxiliary file"
+    },
+    {
+      "path": "docs/acceptance/recovery-20261009-matte-frame-real-evidence.log",
+      "reason": "historical report or auxiliary file"
+    },
+    {
+      "path": "docs/acceptance/recovery-20261009-matte-frame-tests.log",
+      "reason": "historical report or auxiliary file"
+    },
+    {
+      "path": "docs/acceptance/recovery-20261009-new-person-quality.png",
+      "reason": "historical report or auxiliary file"
+    },
+    {
+      "path": "docs/acceptance/recovery-20261009-original-queue-running.png",
+      "reason": "historical report or auxiliary file"
+    },
+    {
+      "path": "docs/acceptance/recovery-20261009-overlay-before-after.png",
+      "reason": "historical report or auxiliary file"
+    },
+    {
+      "path": "docs/acceptance/recovery-20261009-overlay-boundary.png",
+      "reason": "historical report or auxiliary file"
+    },
+    {
+      "path": "docs/acceptance/recovery-20261009-overlay-onset.png",
+      "reason": "historical report or auxiliary file"
+    },
+    {
+      "path": "docs/acceptance/recovery-20261009-person-after-overlay.png",
+      "reason": "historical report or auxiliary file"
+    },
+    {
+      "path": "docs/acceptance/recovery-20261009-person-rejected.png",
+      "reason": "historical report or auxiliary file"
+    },
+    {
+      "path": "docs/acceptance/recovery-20261009-pipcheck-final.log",
+      "reason": "historical report or auxiliary file"
+    },
+    {
+      "path": "docs/acceptance/recovery-20261009-pipcheck.log",
+      "reason": "historical report or auxiliary file"
+    },
+    {
+      "path": "docs/acceptance/recovery-20261009-process-event-target-fixed.log",
+      "reason": "historical report or auxiliary file"
+    },
+    {
+      "path": "docs/acceptance/recovery-20261009-process-event-target.log",
+      "reason": "historical report or auxiliary file"
+    },
+    {
+      "path": "docs/acceptance/recovery-20261009-readiness-baseline.log",
+      "reason": "historical report or auxiliary file"
+    },
+    {
+      "path": "docs/acceptance/recovery-20261009-readiness-target.log",
+      "reason": "historical report or auxiliary file"
+    },
+    {
+      "path": "docs/acceptance/recovery-20261009-resume-baseline-tests.log",
+      "reason": "historical report or auxiliary file"
+    },
+    {
+      "path": "docs/acceptance/recovery-20261009-resume-blocked.sample.txt",
+      "reason": "historical report or auxiliary file"
+    },
+    {
+      "path": "docs/acceptance/recovery-20261009-resume-measurement.log",
+      "reason": "historical report or auxiliary file"
+    },
+    {
+      "path": "docs/acceptance/recovery-20261009-resume-response-backend-verified.log",
+      "reason": "historical report or auxiliary file"
+    },
+    {
+      "path": "docs/acceptance/recovery-20261009-resume-response-backend.log",
+      "reason": "historical report or auxiliary file"
+    },
+    {
+      "path": "docs/acceptance/recovery-20261009-resume-response-frontend-check.log",
+      "reason": "historical report or auxiliary file"
+    },
+    {
+      "path": "docs/acceptance/recovery-20261009-resume-response-frontend-tests.log",
+      "reason": "historical report or auxiliary file"
+    },
+    {
+      "path": "docs/acceptance/recovery-20261009-resume-response-lint.log",
+      "reason": "historical report or auxiliary file"
+    },
+    {
+      "path": "docs/acceptance/recovery-20261009-resume-response-typecheck.log",
+      "reason": "historical report or auxiliary file"
+    },
+    {
+      "path": "docs/acceptance/recovery-20261009-resume-target-tests.log",
+      "reason": "historical report or auxiliary file"
+    },
+    {
+      "path": "docs/acceptance/recovery-20261009-rgb1s.png",
+      "reason": "historical report or auxiliary file"
+    },
+    {
+      "path": "docs/acceptance/recovery-20261009-rgb30s.png",
+      "reason": "historical report or auxiliary file"
+    },
+    {
+      "path": "docs/acceptance/recovery-20261009-rgb32s.png",
+      "reason": "historical report or auxiliary file"
+    },
+    {
+      "path": "docs/acceptance/recovery-20261009-rgb37s.png",
+      "reason": "historical report or auxiliary file"
+    },
+    {
+      "path": "docs/acceptance/recovery-20261009-runtime-recovery-target.log",
+      "reason": "historical report or auxiliary file"
+    },
+    {
+      "path": "docs/acceptance/recovery-20261009-saved-continuation-tests.log",
+      "reason": "historical report or auxiliary file"
+    },
+    {
+      "path": "docs/acceptance/recovery-20261009-staging-frontend.log",
+      "reason": "historical report or auxiliary file"
+    },
+    {
+      "path": "docs/acceptance/recovery-20261009-staging-runtime.log",
+      "reason": "historical report or auxiliary file"
+    },
+    {
+      "path": "docs/acceptance/recovery-20261009-startup.sample.txt",
+      "reason": "historical report or auxiliary file"
+    },
+    {
+      "path": "docs/acceptance/recovery-20261009-unstarted-claim-tests.log",
+      "reason": "historical report or auxiliary file"
+    },
+    {
+      "path": "docs/acceptance/recovery-20261009-v13-composite.png",
+      "reason": "historical report or auxiliary file"
+    },
+    {
+      "path": "docs/acceptance/recovery-20261009-v13-recompose-running.png",
+      "reason": "historical report or auxiliary file"
+    },
+    {
+      "path": "docs/acceptance/recovery-database-20261009.md",
+      "reason": "historical report or auxiliary file"
+    },
+    {
+      "path": "docs/acceptance/review-local-keep-preview.png",
+      "reason": "historical report or auxiliary file"
+    },
+    {
+      "path": "docs/acceptance/review-local-point-preview.png",
+      "reason": "historical report or auxiliary file"
+    },
+    {
+      "path": "docs/acceptance/review-local-remove-preview.png",
+      "reason": "historical report or auxiliary file"
+    },
+    {
+      "path": "docs/acceptance/review-xy-formal-composition.png",
+      "reason": "historical report or auxiliary file"
+    },
+    {
+      "path": "docs/acceptance/review-xy-live-canvas.png",
+      "reason": "historical report or auxiliary file"
+    },
+    {
+      "path": "docs/acceptance/review-xy-new-composition.png",
+      "reason": "historical report or auxiliary file"
+    },
+    {
+      "path": "docs/acceptance/rpa-bg01-recovery-20261011.md",
+      "reason": "historical report or auxiliary file"
+    },
+    {
+      "path": "docs/acceptance/rpa-download-tests-20261011.log",
+      "reason": "historical report or auxiliary file"
+    },
+    {
+      "path": "docs/acceptance/rpa-triage-assets-frontend-check-20261011.log",
+      "reason": "historical report or auxiliary file"
+    },
+    {
+      "path": "docs/acceptance/rpa-triage-assets-frontend-unit-20261011.log",
+      "reason": "historical report or auxiliary file"
+    },
+    {
+      "path": "docs/acceptance/rpa-triage-assets-runtime-final-20261011.json",
+      "reason": "historical report or auxiliary file"
+    },
+    {
+      "path": "docs/acceptance/rpa-triage-deployed-backend-20261011.log",
+      "reason": "historical report or auxiliary file"
+    },
+    {
+      "path": "docs/acceptance/rpa-triage-orphan-deploy-proof-20261011.json",
+      "reason": "historical report or auxiliary file"
+    },
+    {
+      "path": "docs/acceptance/rpa-triage-orphan-deployed-backend-20261011.log",
+      "reason": "historical report or auxiliary file"
+    },
+    {
+      "path": "docs/acceptance/unattended-production-queue-tests-20261011.log",
+      "reason": "historical report or auxiliary file"
+    },
+    {
+      "path": "docs/migration/GIT同步与Windows下载指南.md",
+      "reason": "historical report or auxiliary file"
+    },
+    {
+      "path": "docs/migration/Windows主服务器迁移验收报告.md",
+      "reason": "historical report or auxiliary file"
+    },
+    {
+      "path": "docs/migration/mac_to_windows_migration_guide.md",
+      "reason": "historical report or auxiliary file"
+    },
+    {
+      "path": "docs/migration/migration_recovery_checkpoint.md",
+      "reason": "historical report or auxiliary file"
+    },
+    {
+      "path": "docs/migration/windows_migration_acceptance_checklist.md",
+      "reason": "historical report or auxiliary file"
+    },
+    {
+      "path": "docs/migration/windows_path_and_service_mapping.md",
+      "reason": "historical report or auxiliary file"
+    },
+    {
+      "path": "docs/migration/windows_server_recovery_checkpoint.md",
+      "reason": "historical report or auxiliary file"
+    },
+    {
+      "path": "docs/migration/数据媒体迁移与校验指南.md",
+      "reason": "historical report or auxiliary file"
+    },
+    {
+      "path": "docs/operations/Windows主机与Tailscale访问指南.md",
+      "reason": "historical report or auxiliary file"
+    },
+    {
+      "path": "docs/operations/Windows账号与HubStudio环境映射教程.md",
+      "reason": "historical report or auxiliary file"
+    },
+    {
+      "path": "docs/operations/account_hubstudio_mapping.md",
+      "reason": "historical report or auxiliary file"
+    },
+    {
+      "path": "docs/operations/account_hubstudio_mapping_template.csv",
+      "reason": "historical report or auxiliary file"
+    },
+    {
+      "path": "docs/operations/one_click_start_mac.md",
+      "reason": "historical report or auxiliary file"
+    },
+    {
+      "path": "docs/operations/one_click_start_windows.md",
+      "reason": "historical report or auxiliary file"
+    },
+    {
+      "path": "docs/operations/unattended-collection-policy.md",
+      "reason": "historical report or auxiliary file"
+    },
+    {
+      "path": "library_file_transfer.py",
+      "reason": "historical report or auxiliary file"
+    },
+    {
+      "path": "全流程AI接口判断与验收教程.md",
+      "reason": "historical report or auxiliary file"
+    }
+  ],
+  "contains_git_history": false,
+  "contains_database": false,
+  "contains_private_configuration": false,
+  "contains_media_or_model_weights": false,
+  "note": "Factory source only. Local uncommitted document deletions are not restored. README supplied from committed development guide."
+}

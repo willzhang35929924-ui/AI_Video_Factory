@@ -1,0 +1,1 @@
+export default function Loading(){return <div aria-label="页面加载中" className="space-y-5"><div className="h-10 w-56 animate-pulse rounded bg-muted"/><div className="h-72 animate-pulse rounded-xl bg-muted"/></div>;}

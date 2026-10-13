@@ -1,0 +1,19 @@
+# Copy to config.yaml only on a NEW checkout. Never overwrite an existing private config.
+publishing:
+  concurrency: 1
+  allow_publish: false
+  stop_after_upload: true
+  product_selection_mode: runtime_match
+  manual_cdp_allowed: true
+  hubstudio_api_url: http://127.0.0.1:6873
+  hubstudio_api_key_env: HUBSTUDIO_LOCAL_API_KEY
+  product_source_url: ''
+  product_source_tab: ''
+  description_ai:
+    enabled: false
+    provider: openai_compatible
+    base_url: ''
+    model: ''
+    api_key_env: VIDEO_PUBLISH_DESCRIPTION_API_KEY
+    timeout_seconds: 120
+    sync_to_tencent: false

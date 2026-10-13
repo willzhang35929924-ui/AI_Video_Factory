@@ -1,0 +1,9 @@
+[
+  {"from": "/Users/xiaoyao/AI_Video_Factory/storage", "to": "D:\\AI_Video_Factory\\storage\\windows-acceptance"},
+  {"from": "/Users/xiaoyao/AI_Video_Factory", "to": "D:\\AI_Video_Factory"},
+  {"from": "/Users/xiaoyao/TikTok_Auto", "to": "D:\\TikTok_Auto"},
+  {"from": "/Users/xiaoyao/video_auto", "to": "D:\\video_auto"},
+  {"from": "/Users/xiaoyao/video_publish", "to": "D:\\video_publish"},
+  {"from": "/Users/xiaoyao/ComfyUI", "to": "D:\\ComfyUI"},
+  {"from": "/Users/xiaoyao/Downloads", "to": "D:\\MigrationLegacyDownloads"}
+]

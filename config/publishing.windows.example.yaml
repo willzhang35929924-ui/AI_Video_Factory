@@ -1,0 +1,18 @@
+# D:/AI_Video_Factory is an example. Replace it with the verified project root.
+publishing:
+  concurrency: 1
+  allow_publish: false
+  stop_after_upload: true
+  product_selection_mode: runtime_match
+  source_roots:
+    - D:/AI_Video_Factory/storage
+  output_root: D:/AI_Video_Factory/storage/publishing
+  hubstudio_api_url: http://127.0.0.1:6873
+  hubstudio_api_key_env: HUBSTUDIO_LOCAL_API_KEY
+  manual_cdp_allowed: true
+  network_probe_environment_ids: []
+  description_ai:
+    enabled: false
+    api_key_env: VIDEO_PUBLISH_DESCRIPTION_API_KEY
+    model: ""
+    base_url: ""

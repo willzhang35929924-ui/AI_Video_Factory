@@ -1,0 +1,52 @@
+"use client";
+import { Suspense, use, useState } from "react";
+import { useSearchParams } from "next/navigation";
+import { useQuery } from "@tanstack/react-query";
+import Link from "next/link";
+import { ArrowLeft, Download, RefreshCw } from "lucide-react";
+import { Button } from "@/components/ui/button";
+import { PageHeading, Panel, StatusBadge, EmptyState, SmallMetric } from "@/components/factory-ui";
+import { request, downloadJson } from "@/lib/api";
+import { type Asset, type ProcessingRun, type QualityAssessment, type Review, timeLabel } from "@/lib/types";
+import { AssetPreview } from "@/components/production-ui";
+import { AssetDeletionDialog, fileSize, type DeleteResult } from "@/components/asset-deletion";
+
+export default function AssetDetail({params}:{params:Promise<{id:string}>}) {
+  const {id}=use(params);
+  return <Suspense fallback={<Panel>正在读取资产记录…</Panel>}><AssetDetailContent id={id}/></Suspense>;
+}
+
+type AssetRecord={asset:Asset;media:{available:boolean;preview_available:boolean;status:string;exists:boolean;size:number|null;recorded_size:number|null;hash_check:string;alpha?:{path:string;exists:boolean;sha256:string}};context:Record<string,unknown>;context_id:string|null;parent_asset_id:string|null;version:number|null;execution_scope:string;lineage:{assets:Asset[];edges:{from_asset_id:string;to_asset_id:string;resolved:boolean}[];children:Asset[]};workflows:{id:string;version:string;processing_run_id:string;prompt_id:string|null;sha256:string;workflow:Record<string,unknown>;execution:Record<string,unknown>}[];runs:ProcessingRun[];quality:QualityAssessment[];reviews:Review[]};
+
+function AssetDetailContent({id}:{id:string}) {
+  const search=useSearchParams();
+  const selectedScope=search.get("scope");
+  const scope=selectedScope==="history"||selectedScope==="technical"?selectedScope:"production";
+  const [deleted,setDeleted]=useState<DeleteResult>();
+  const record=useQuery({queryKey:["asset-record",id,scope],queryFn:()=>request<AssetRecord>(`/api/assets/${encodeURIComponent(id)}/registry?scope=${scope}`),retry:false,refetchInterval:5000});
+  const asset=record.data?.asset;
+  const data=record.data;
+  if(deleted)return <EmptyState title="媒体已删除 · MEDIA_DELETED" description={`删除回执：文件留存 ${fileSize(deleted.released_bytes)}。关联记录按已确认计划处理；未关联任务、删除审计和外部发布回执保留。`}><div className="space-y-3">{deleted.cleanup_errors?.map(error=><p key={error.path} role="alert" className="break-all text-xs text-red-600">隔离文件清理失败：{error.error} · {error.path}</p>)}<Link href="/assets" className="text-xs underline underline-offset-4">返回素材库</Link><Link href={asset?.task_id?`/tasks/${asset.task_id}`:"/assets"} className="text-xs underline underline-offset-4">查看保留任务</Link></div></EmptyState>;
+  if(record.isPending)return <Panel><p role="status" className="text-xs text-muted-foreground">正在读取资产与文件状态…</p></Panel>;
+  if(record.isError)return <EmptyState title="素材记录无法读取" description={record.error.message}><div className="flex gap-3"><Link href="/assets" className="text-xs underline underline-offset-4">返回素材库</Link><Button variant="outline" onClick={()=>record.refetch()}>重新读取</Button></div></EmptyState>;
+  if(!asset||!data)return null;
+  const history=scope!=="production"?`?scope=${scope}`:"";
+  const value=(entry:unknown)=>entry==null||entry===""?"UNKNOWN":typeof entry==="object"?JSON.stringify(entry):String(entry);
+  return <>
+    <Link href="/assets" className="mb-6 inline-flex items-center gap-2 text-xs text-muted-foreground"><ArrowLeft size={13}/>返回素材库</Link>
+    <PageHeading eyebrow={asset.id} title={asset.name} description={`${asset.country} · ${asset.keyword} · ${data.execution_scope}`}><StatusBadge status={asset.status}/><Button variant="outline" disabled={record.isFetching} onClick={()=>record.refetch()}><RefreshCw size={14}/>刷新状态</Button><Button variant="outline" onClick={()=>downloadJson(`${asset.id}-registry.json`,data)}><Download size={14}/>导出资产记录</Button><AssetDeletionDialog assets={[asset]} scope={scope} label="删除 / 查看保护" onDeleted={results=>{const removed=results.find(result=>(result.asset_id===id||result.deleted_asset_ids?.includes(id)) && (result.record_deleted||["DELETED","DELETED_WITH_CLEANUP_ERROR"].includes(result.status)));if(removed)setDeleted(removed);else void record.refetch();}}/></PageHeading>
+    <div className="grid gap-6 lg:grid-cols-[minmax(0,1fr)_minmax(0,1fr)]">
+      <Panel>{data.media.available&&data.media.preview_available?<AssetPreview asset={asset} label={asset.name}/>:<div className="flex aspect-video items-center justify-center rounded-lg border bg-muted/20 p-6 text-center text-xs leading-6 text-muted-foreground"><div><p>{asset.type==="source_candidate"?"候选链接尚无本地视频":asset.registry_status==="mock"?"Mock 历史记录，不包含真实媒体":"媒体不存在或与登记记录不一致"}</p><p className="mt-2 font-mono text-[10px]">{data.media.status}</p></div></div>}{asset.source_url&&<a className="mt-4 inline-block text-xs underline underline-offset-4" target="_blank" rel="noreferrer" href={asset.source_url}>查看原始来源链接</a>}</Panel>
+      <div className="space-y-6">
+        <Panel title="原始媒体规格"><div className="grid grid-cols-2 gap-8"><SmallMetric label="分辨率" value={asset.width&&asset.height?`${asset.width} × ${asset.height}`:"UNKNOWN"}/><SmallMetric label="原始帧率" value={asset.fps?`${asset.fps} FPS`:"UNKNOWN"}/><SmallMetric label="编码" value={asset.codec||"UNKNOWN"}/><SmallMetric label="时长" value={asset.duration?`${asset.duration} s`:"UNKNOWN"}/></div></Panel>
+        <Panel title="资产溯源"><dl className="space-y-5 text-xs"><div><dt className="text-muted-foreground">生产任务</dt><dd className="mt-2"><Link className="break-all underline underline-offset-4" href={`/tasks/${asset.task_id}`}>{asset.task_id}</Link></dd></div>{[["Context ID",data.context_id],["产品 ID",data.context.product_id],["数据来源",data.context.source_document],["来源行",data.context.source_row],["父资产",data.parent_asset_id],["版本",data.version],["资产类型",asset.asset_type||asset.type],["登记状态",asset.registry_status],["媒体状态",data.media.status],["实际本地路径",asset.external_path||asset.storage_path],["SHA-256（登记值）",asset.sha256],["文件大小（登记值）",asset.size],["文件大小（当前）",data.media.size],["创建时间",timeLabel(asset.created_at)]].map(([label,entry])=><div key={String(label)}><dt className="text-muted-foreground">{String(label)}</dt><dd className="mt-2 break-all font-mono text-[11px]">{value(entry)}</dd></div>)}</dl>{data.media.alpha&&<div className="mt-5 border-t pt-4 text-[11px]"><p>独立 Alpha · {data.media.alpha.exists?"文件存在":"媒体不存在"}</p><p className="mt-2 break-all font-mono text-[10px]">{data.media.alpha.path}</p><p className="mt-2 break-all font-mono text-[10px]">SHA-256（登记值）: {data.media.alpha.sha256||"UNKNOWN"}</p></div>}<p className="mt-6 border-t pt-4 text-[10px] leading-6 text-muted-foreground">文件状态只核对存在与大小，不把文件名或旧登记值当作本次完整解码、Hash 验证或质量通过。SOURCE_CANDIDATE 不代表已下载。</p></Panel>
+      </div>
+    </div>
+    <div className="mt-6 grid items-start gap-6 lg:grid-cols-2">
+      <Panel title="资产关联" description="只展示已有的明确关联，不按文件名推断。">{data.lineage.edges.length?<ul className="space-y-4">{data.lineage.edges.map(edge=><li key={`${edge.from_asset_id}-${edge.to_asset_id}`} className="break-all text-[11px] leading-6">{edge.resolved?<Link href={`/assets/${edge.from_asset_id}${history}`} className="underline underline-offset-4">{edge.from_asset_id}</Link>:<span>{edge.from_asset_id} · 关联记录不存在</span>}<span className="mx-2">→</span><Link href={`/assets/${edge.to_asset_id}${history}`} className="underline underline-offset-4">{edge.to_asset_id}</Link></li>)}</ul>:<p className="text-xs text-muted-foreground">没有已登记的上游资产关联。</p>}{data.lineage.children.length>0&&<div className="mt-5 space-y-3 border-t pt-4"><p className="text-[10px] text-muted-foreground">复用此资产的下游产物</p>{data.lineage.children.map(child=><Link key={child.id} href={`/assets/${child.id}${history}`} className="block break-all text-[11px] underline underline-offset-4">{child.asset_type||child.type} · {child.id}</Link>)}</div>}</Panel>
+      <Panel title="工作流与执行记录">{data.workflows.length?data.workflows.map(workflow=><div key={workflow.id} className="mb-4 rounded-lg border p-4 text-[11px]"><p className="break-all">{workflow.id}</p><p className="mt-2 break-all font-mono text-[10px]">SHA-256: {workflow.sha256||"UNKNOWN"}</p><p className="mt-2 break-all">Run: {workflow.processing_run_id} · Prompt: {workflow.prompt_id||"未提交"}</p><p className="mt-2">Submitted: {value(workflow.execution.submitted)} · Cache: {value(workflow.execution.cache_hit)}</p><Button variant="ghost" size="sm" className="mt-3" onClick={()=>downloadJson(`${workflow.id}.json`,workflow.workflow)}>导出 API 工作流</Button></div>):<p className="text-xs text-muted-foreground">此资产没有已关联的工作流快照。</p>}{data.runs.map(run=><div key={run.id} className="mt-4 border-t pt-4 text-[11px]"><Link href={`/tasks/${asset.task_id}`} className="break-all underline underline-offset-4">{run.id}</Link><p className="mt-2">{run.provider} · {run.status} · Exit: {run.exit_code??"UNKNOWN"}</p><p className="mt-2 text-[10px] text-muted-foreground">{timeLabel(run.started_at||null)} · {run.duration_ms==null?"耗时 UNKNOWN":`${run.duration_ms} ms`}</p></div>)}</Panel>
+      <Panel title="质量与审核">{data.quality.length||data.reviews.length?<div className="space-y-4">{data.quality.map(quality=><div key={quality.id} className="text-xs"><p>{quality.status} · Score: {quality.quality_score??"UNKNOWN"}</p><p className="mt-2 break-all text-[10px] text-muted-foreground">{quality.asset_id} · {quality.processing_run_id}</p>{quality.issue_segments.map((issue,index)=><p key={index} className="mt-2 text-[11px]">{issue.start.toFixed(2)}–{issue.end.toFixed(2)}s · {issue.issue||issue.type||"UNKNOWN"}</p>)}</div>)}{data.reviews.map(review=><div key={review.id} className="border-t pt-4 text-xs"><p>{review.id} · {review.status}</p><p className="mt-2 text-[11px] text-muted-foreground">{review.note||"尚无审核说明"}</p><Link href="/review" className="mt-3 inline-block text-[11px] underline underline-offset-4">打开审核中心</Link></div>)}</div>:<p className="text-xs text-muted-foreground">尚无真实质量或审核记录。</p>}</Panel>
+      <Panel title="任务上下文与 ffprobe"><pre className="whitespace-pre-wrap break-all font-mono text-[10px] leading-6 text-muted-foreground">{JSON.stringify(data.context,null,2)}</pre><details className="mt-5 border-t pt-4 text-xs"><summary className="cursor-pointer">已登记的 ffprobe 结果</summary><pre className="mt-3 overflow-x-auto whitespace-pre-wrap break-all text-[10px] leading-6">{JSON.stringify(asset.probe_metadata||{},null,2)}</pre></details></Panel>
+    </div>
+  </>;
+}

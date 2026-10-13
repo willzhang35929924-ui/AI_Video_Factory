@@ -1,0 +1,11 @@
+{
+  "environment": "production",
+  "production_cutover_confirmed": false,
+  "database_path": "backend/factory.db",
+  "storage_root": "storage",
+  "backend_port": 8000,
+  "frontend_port": 3000,
+  "timeout_seconds": 90,
+  "frontend_mode": "dev",
+  "open_browser": true
+}

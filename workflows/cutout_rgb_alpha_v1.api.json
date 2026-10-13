@@ -1,0 +1,9 @@
+{
+  "14": {"class_type": "VHS_LoadVideoPath", "inputs": {"video": "", "force_rate": 0, "custom_width": 0, "custom_height": 0, "frame_load_cap": 10, "skip_first_frames": 0, "select_every_nth": 1, "format": "None"}},
+  "11": {"class_type": "BiRefNetRMBG", "inputs": {"model": "BiRefNet-general", "sensitivity": 0.9, "mask_blur": 1, "mask_offset": 1, "invert_output": false, "refine_foreground": false, "background": "Alpha", "background_color": "#222222", "image": ["14", 0]}},
+  "38": {"class_type": "VideoAutoMatteRepair", "inputs": {"hole_area_ratio": 0.005, "temporal_strength": 0.7, "temporal_radius": 1, "flow_max_side": 384, "scene_cut_threshold": 0.12, "start_frame": 0, "frame_count": 8, "images": ["14", 0], "mask": ["11", 1]}},
+  "40": {"class_type": "VHS_VideoInfo", "inputs": {"video_info": ["14", 3]}},
+  "mask_image": {"class_type": "MaskToImage", "inputs": {"mask": ["38", 1]}},
+  "save_rgb": {"class_type": "VHS_VideoCombine", "inputs": {"images": ["38", 0], "frame_rate": ["40", 5], "loop_count": 0, "filename_prefix": "factory/foreground/RGB", "format": "video/ffv1-mkv", "level": "3", "coder": "1", "context": "1", "gop_size": 1, "slices": "16", "slicecrc": "1", "pix_fmt": "rgba64le", "save_metadata": false, "trim_to_audio": false, "pingpong": false, "save_output": true}},
+  "save_alpha": {"class_type": "VHS_VideoCombine", "inputs": {"images": ["mask_image", 0], "frame_rate": ["40", 5], "loop_count": 0, "filename_prefix": "factory/foreground/Alpha", "format": "video/ffv1-mkv", "level": "3", "coder": "1", "context": "1", "gop_size": 1, "slices": "16", "slicecrc": "1", "pix_fmt": "gray16le", "save_metadata": false, "trim_to_audio": false, "pingpong": false, "save_output": true}}
+}
