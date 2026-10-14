@@ -24,7 +24,7 @@ storage/vendor/       本机模型依赖（含指纹所需 Git 元数据）
 ## 当前 Mac 启动
 
 ```bash
-cd /Users/xiaoyao/AI_Video_Factory
+cd /Users/AI_Video_Factory
 backend/.venv/bin/python scripts/factory_launcher.py check
 backend/.venv/bin/python scripts/factory_launcher.py start
 ```
